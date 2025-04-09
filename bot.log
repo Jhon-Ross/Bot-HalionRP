@@ -3895,3 +3895,652 @@ AttributeError: 'NoneType' object has no attribute 'sequence'
 2025-04-09 12:28:09 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
 2025-04-09 12:28:13 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
 2025-04-09 12:28:54 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 2 mensagens em #logs-discord (1168518830377685002)
+2025-04-09 12:32:45 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:32:45 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:32:45 | INFO | root | ⚡ ==================================================
+2025-04-09 12:32:45 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:32:45 | INFO | discord.client | logging in using static token
+2025-04-09 12:32:45 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:32:45 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:32:45 | INFO | root | 📦 ==================================================
+2025-04-09 12:32:45 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:32:45 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:32:45 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:32:45 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:32:45 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:32:46 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:32:46 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:32:46 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:32:46 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:32:46 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 9062a2e170fcc0f41fd8aae88329a446).
+2025-04-09 12:32:48 | INFO | root | 
+🤖 ==================================================
+2025-04-09 12:32:48 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 12:32:48 | INFO | root | 🤖 ==================================================
+2025-04-09 12:32:48 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 12:32:48 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 12:32:48 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 12:32:48 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 12:32:48
+2025-04-09 12:32:48 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 12:32:48 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 12:32:48 | INFO | root | 
+🔄 ==================================================
+2025-04-09 12:32:48 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 12:32:48 | INFO | root | 🔄 ==================================================
+2025-04-09 12:33:05 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 12:33:11 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 12:33:18 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 12:33:22 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 12:33:33 | WARNING | cogs.moderacao | Usuário jhonross_79910 tentou usar /excluir sem cargo permitido.
+2025-04-09 12:33:37 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'whitelist'. Não possui cargos permitidos.
+2025-04-09 12:33:41 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos.
+2025-04-09 12:33:46 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 12:33:46 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:33:46 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:33:46 | INFO | root | 🚀 ==================================================
+2025-04-09 12:34:25 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 3 mensagens em #logs-discord (1168518830377685002)
+2025-04-09 12:44:15 | INFO | root | ℹ️ Membro jhonross_79910 (1359218835919605914) saiu.
+2025-04-09 12:45:45 | INFO | cogs.verificacao | Mensagem de boas-vindas enviada para jhonross_79910 (1359218835919605914)
+2025-04-09 12:45:45 | INFO | root | 🔄 Tentando adicionar cargo 'Visitante' para jhonross_79910...
+2025-04-09 12:45:46 | INFO | root | ✅ Cargo 'Visitante' atribuído a jhonross_79910 (1359218835919605914)
+2025-04-09 12:46:49 | INFO | cogs.verificacao | Iniciando troca de cargos (botão) para jhonross_79910: Visitante -> Turista
+2025-04-09 12:46:49 | INFO | cogs.verificacao | Cargo 'Turista' adicionado a jhonross_79910
+2025-04-09 12:46:49 | INFO | cogs.verificacao | Cargo 'Visitante' removido de jhonross_79910
+2025-04-09 13:15:20 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #🟣・𝗧𝗪𝗜𝗧𝗖𝗛 (1168570559819432007)
+2025-04-09 13:15:48 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #🔵・𝗢𝗨𝗧𝗥𝗢𝗦 (1168570723900604516)
+2025-04-09 14:35:27 | INFO | root | 
+⚡ ==================================================
+2025-04-09 14:35:27 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 14:35:27 | INFO | root | ⚡ ==================================================
+2025-04-09 14:35:27 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 14:35:27 | INFO | discord.client | logging in using static token
+2025-04-09 14:35:27 | INFO | root | 
+📦 ==================================================
+2025-04-09 14:35:27 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 14:35:27 | INFO | root | 📦 ==================================================
+2025-04-09 14:35:27 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 14:35:27 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 14:35:27 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 14:35:27 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 14:35:27 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 14:35:27 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 14:35:27 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 14:35:27 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 14:35:27 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 14:35:30 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: f419859750a35e8e0245fc883d091913).
+2025-04-09 14:35:32 | INFO | root | 
+🤖 ==================================================
+2025-04-09 14:35:32 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 14:35:32 | INFO | root | 🤖 ==================================================
+2025-04-09 14:35:32 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 14:35:32 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 14:35:32 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 14:35:32 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 14:35:32
+2025-04-09 14:35:32 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 14:35:33 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 14:35:33 | INFO | root | 
+🔄 ==================================================
+2025-04-09 14:35:33 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 14:35:33 | INFO | root | 🔄 ==================================================
+2025-04-09 14:36:27 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 14:36:27 | INFO | root | 
+🚀 ==================================================
+2025-04-09 14:36:27 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 14:36:27 | INFO | root | 🚀 ==================================================
+2025-04-09 14:44:28 | INFO | root | 
+⚡ ==================================================
+2025-04-09 14:44:28 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 14:44:28 | INFO | root | ⚡ ==================================================
+2025-04-09 14:44:28 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 14:44:28 | INFO | discord.client | logging in using static token
+2025-04-09 14:44:29 | INFO | root | 
+📦 ==================================================
+2025-04-09 14:44:29 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 14:44:29 | INFO | root | 📦 ==================================================
+2025-04-09 14:44:29 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 14:44:29 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 14:44:29 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 14:44:29 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 14:44:29 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 14:44:29 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 14:44:29 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 14:44:29 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 14:44:29 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 14:44:30 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: d72adb4ce38bf520e9604bc5ec14475a).
+2025-04-09 14:44:32 | INFO | root | 
+🤖 ==================================================
+2025-04-09 14:44:32 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 14:44:32 | INFO | root | 🤖 ==================================================
+2025-04-09 14:44:32 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 14:44:32 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 14:44:32 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 14:44:32 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 14:44:32
+2025-04-09 14:44:32 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 14:44:32 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 14:44:32 | INFO | root | 
+🔄 ==================================================
+2025-04-09 14:44:32 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 14:44:32 | INFO | root | 🔄 ==================================================
+2025-04-09 14:44:43 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 14:44:51 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 14:44:56 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross (ID: 324634477500432397)...
+2025-04-09 14:44:57 | INFO | views.whitelist_view | Canal wl-324634477500432397 criado com sucesso para jhonross.
+2025-04-09 14:45:29 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 14:45:29 | INFO | root | 
+🚀 ==================================================
+2025-04-09 14:45:29 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 14:45:29 | INFO | root | 🚀 ==================================================
+2025-04-09 15:04:19 | INFO | root | 
+⚡ ==================================================
+2025-04-09 15:04:19 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 15:04:19 | INFO | root | ⚡ ==================================================
+2025-04-09 15:04:19 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 15:04:19 | INFO | discord.client | logging in using static token
+2025-04-09 15:04:19 | INFO | root | 
+📦 ==================================================
+2025-04-09 15:04:19 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 15:04:19 | INFO | root | 📦 ==================================================
+2025-04-09 15:04:19 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 15:04:19 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 15:04:19 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 15:04:19 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 15:04:19 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 15:04:20 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 15:04:20 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 15:04:20 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 15:04:20 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 15:04:20 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: d859060caa2278f00e75d33f00a37054).
+2025-04-09 15:04:22 | INFO | root | 
+🤖 ==================================================
+2025-04-09 15:04:22 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 15:04:22 | INFO | root | 🤖 ==================================================
+2025-04-09 15:04:22 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 15:04:22 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 15:04:22 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 15:04:22 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 15:04:22
+2025-04-09 15:04:22 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 15:04:22 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 15:04:22 | INFO | root | 
+🔄 ==================================================
+2025-04-09 15:04:22 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 15:04:22 | INFO | root | 🔄 ==================================================
+2025-04-09 15:04:52 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 15:04:57 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 15:05:02 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross (ID: 324634477500432397)...
+2025-04-09 15:05:02 | INFO | views.whitelist_view | Canal wl-324634477500432397 criado com sucesso para jhonross.
+2025-04-09 15:05:20 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 15:05:20 | INFO | root | 
+🚀 ==================================================
+2025-04-09 15:05:20 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 15:05:20 | INFO | root | 🚀 ==================================================
+2025-04-09 15:08:24 | INFO | root | 
+⚡ ==================================================
+2025-04-09 15:08:24 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 15:08:24 | INFO | root | ⚡ ==================================================
+2025-04-09 15:08:24 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 15:08:24 | INFO | discord.client | logging in using static token
+2025-04-09 15:08:25 | INFO | root | 
+📦 ==================================================
+2025-04-09 15:08:25 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 15:08:25 | INFO | root | 📦 ==================================================
+2025-04-09 15:08:25 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 15:08:25 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 15:08:25 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 15:08:25 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 15:08:25 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 15:08:25 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 15:08:25 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 15:08:25 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 15:08:25 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 15:08:25 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 4e588bdacaed6a7bc147ffeea37e54ca).
+2025-04-09 15:08:27 | INFO | root | 
+🤖 ==================================================
+2025-04-09 15:08:27 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 15:08:27 | INFO | root | 🤖 ==================================================
+2025-04-09 15:08:27 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 15:08:27 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 15:08:27 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 15:08:27 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 15:08:27
+2025-04-09 15:08:27 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 15:08:28 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 15:08:28 | INFO | root | 
+🔄 ==================================================
+2025-04-09 15:08:28 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 15:08:28 | INFO | root | 🔄 ==================================================
+2025-04-09 15:09:25 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 15:09:25 | INFO | root | 
+🚀 ==================================================
+2025-04-09 15:09:25 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 15:09:25 | INFO | root | 🚀 ==================================================
+2025-04-09 15:15:15 | INFO | root | 
+⚡ ==================================================
+2025-04-09 15:15:15 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 15:15:15 | INFO | root | ⚡ ==================================================
+2025-04-09 15:15:15 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 15:15:15 | INFO | discord.client | logging in using static token
+2025-04-09 15:15:15 | INFO | root | 
+📦 ==================================================
+2025-04-09 15:15:15 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 15:15:15 | INFO | root | 📦 ==================================================
+2025-04-09 15:15:15 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 15:15:15 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 15:15:15 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 15:15:15 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 15:15:15 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 15:15:16 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 15:15:16 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 15:15:16 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 15:15:16 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 15:15:16 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: b095172830c2d1c41f8815f88fa277ac).
+2025-04-09 15:15:18 | INFO | root | 
+🤖 ==================================================
+2025-04-09 15:15:18 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 15:15:18 | INFO | root | 🤖 ==================================================
+2025-04-09 15:15:18 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 15:15:18 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 15:15:18 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 15:15:18 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 15:15:18
+2025-04-09 15:15:18 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 15:15:18 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 15:15:18 | INFO | root | 
+🔄 ==================================================
+2025-04-09 15:15:18 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 15:15:18 | INFO | root | 🔄 ==================================================
+2025-04-09 15:16:16 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 15:16:16 | INFO | root | 
+🚀 ==================================================
+2025-04-09 15:16:16 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 15:16:16 | INFO | root | 🚀 ==================================================
+2025-04-09 15:16:23 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 15:16:44 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 15:16:52 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross (ID: 324634477500432397)...
+2025-04-09 15:16:53 | INFO | views.whitelist_view | Canal wl-324634477500432397 criado com sucesso para jhonross.
+2025-04-09 15:18:13 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross_79910 (ID: 1359218835919605914)...
+2025-04-09 15:18:14 | INFO | views.whitelist_view | Canal wl-1359218835919605914 criado com sucesso para jhonross_79910.
+2025-04-09 15:22:24 | INFO | views.whitelist_view | Usuário jhonross (ID: 324634477500432397) tentou whitelist mas está em cooldown por ~25 min.
+2025-04-09 15:29:37 | INFO | root | 
+⚡ ==================================================
+2025-04-09 15:29:37 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 15:29:37 | INFO | root | ⚡ ==================================================
+2025-04-09 15:29:37 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 15:29:37 | INFO | discord.client | logging in using static token
+2025-04-09 15:29:38 | INFO | root | 
+📦 ==================================================
+2025-04-09 15:29:38 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 15:29:38 | INFO | root | 📦 ==================================================
+2025-04-09 15:29:38 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 15:29:38 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 15:29:38 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 15:29:38 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 15:29:38 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 15:29:38 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 15:29:38 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 15:29:38 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 15:29:38 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 15:29:39 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: d134cee4db56f19e52f3704512f0c538).
+2025-04-09 15:29:41 | INFO | root | 
+🤖 ==================================================
+2025-04-09 15:29:41 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 15:29:41 | INFO | root | 🤖 ==================================================
+2025-04-09 15:29:41 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 15:29:41 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 15:29:41 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 15:29:41 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 15:29:41
+2025-04-09 15:29:41 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 15:29:42 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 15:29:42 | INFO | root | 
+🔄 ==================================================
+2025-04-09 15:29:42 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 15:29:42 | INFO | root | 🔄 ==================================================
+2025-04-09 15:30:02 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 15:30:06 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 15:30:11 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross (ID: 324634477500432397)...
+2025-04-09 15:30:11 | INFO | views.whitelist_view | Canal wl-324634477500432397 criado com sucesso para jhonross.
+2025-04-09 15:30:11 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-324634477500432397
+2025-04-09 15:30:38 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 15:30:38 | INFO | root | 
+🚀 ==================================================
+2025-04-09 15:30:38 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 15:30:38 | INFO | root | 🚀 ==================================================
+2025-04-09 15:32:09 | INFO | handlers.questionnaire | Questionário concluído por jhonross. Atribuindo ID de Tentativa: 1
+2025-04-09 15:32:09 | INFO | handlers.questionnaire | Respostas da tentativa 1 de jhonross salvas em whitelist_respostas.csv
+2025-04-09 15:32:09 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 1.
+2025-04-09 15:32:09 | INFO | handlers.questionnaire | Finalizando questionário para jhonross. Tentando deletar canal wl-324634477500432397...
+2025-04-09 15:32:12 | INFO | handlers.questionnaire | Canal wl-324634477500432397 deletado com sucesso.
+2025-04-09 15:32:46 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross_79910 (ID: 1359218835919605914)...
+2025-04-09 15:32:46 | INFO | views.whitelist_view | Canal wl-1359218835919605914 criado com sucesso para jhonross_79910.
+2025-04-09 15:32:47 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross_79910 (ID: 1359218835919605914) no canal wl-1359218835919605914
+2025-04-09 15:33:49 | INFO | handlers.questionnaire | Questionário concluído por jhonross_79910. Atribuindo ID de Tentativa: 2
+2025-04-09 15:33:49 | INFO | handlers.questionnaire | Respostas da tentativa 2 de jhonross_79910 salvas em whitelist_respostas.csv
+2025-04-09 15:33:49 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 2.
+2025-04-09 15:33:49 | INFO | handlers.questionnaire | Finalizando questionário para jhonross_79910. Tentando deletar canal wl-1359218835919605914...
+2025-04-09 15:33:51 | INFO | handlers.questionnaire | Canal wl-1359218835919605914 deletado com sucesso.
+2025-04-09 15:43:51 | INFO | views.whitelist_view | Criando canal de whitelist para zeidfox (ID: 484932600041963536)...
+2025-04-09 15:43:51 | INFO | views.whitelist_view | Canal wl-484932600041963536 criado com sucesso para zeidfox.
+2025-04-09 15:43:51 | INFO | handlers.questionnaire | Iniciando processo de questionário para: zeidfox (ID: 484932600041963536) no canal wl-484932600041963536
+2025-04-09 15:45:04 | INFO | handlers.questionnaire | Questionário concluído por zeidfox. Atribuindo ID de Tentativa: 3
+2025-04-09 15:45:04 | INFO | handlers.questionnaire | Respostas da tentativa 3 de zeidfox salvas em whitelist_respostas.csv
+2025-04-09 15:45:04 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 3.
+2025-04-09 15:45:04 | INFO | handlers.questionnaire | Finalizando questionário para zeidfox. Tentando deletar canal wl-484932600041963536...
+2025-04-09 15:45:06 | INFO | handlers.questionnaire | Canal wl-484932600041963536 deletado com sucesso.
+2025-04-09 16:16:54 | INFO | discord.gateway | Shard ID None has successfully RESUMED session d134cee4db56f19e52f3704512f0c538.
+2025-04-09 16:53:22 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross (ID: 324634477500432397)...
+2025-04-09 16:53:24 | INFO | views.whitelist_view | Canal wl-324634477500432397 criado com sucesso para jhonross.
+2025-04-09 16:53:24 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-324634477500432397
+2025-04-09 16:53:44 | INFO | views.whitelist_view | Criando canal de whitelist para jhonross_79910 (ID: 1359218835919605914)...
+2025-04-09 16:53:45 | INFO | views.whitelist_view | Canal wl-1359218835919605914 criado com sucesso para jhonross_79910.
+2025-04-09 16:53:45 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross_79910 (ID: 1359218835919605914) no canal wl-1359218835919605914
+2025-04-09 17:04:20 | INFO | root | 
+⚡ ==================================================
+2025-04-09 17:04:20 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 17:04:20 | INFO | root | ⚡ ==================================================
+2025-04-09 17:04:20 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 17:04:20 | INFO | discord.client | logging in using static token
+2025-04-09 17:04:22 | INFO | root | 
+📦 ==================================================
+2025-04-09 17:04:22 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 17:04:22 | INFO | root | 📦 ==================================================
+2025-04-09 17:04:22 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 17:04:22 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 17:04:22 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 17:04:22 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 17:04:22 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 17:04:23 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 17:04:23 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 17:04:23 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 17:04:23 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 17:04:23 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: f9899bf94f47b62ceaab988d9e013bf7).
+2025-04-09 17:04:25 | INFO | root | 
+🤖 ==================================================
+2025-04-09 17:04:25 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 17:04:25 | INFO | root | 🤖 ==================================================
+2025-04-09 17:04:25 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 17:04:25 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 17:04:25 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 17:04:25 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 17:04:25
+2025-04-09 17:04:25 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 17:04:26 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 17:04:26 | INFO | root | 
+🔄 ==================================================
+2025-04-09 17:04:26 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 17:04:26 | INFO | root | 🔄 ==================================================
+2025-04-09 17:04:59 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 17:05:09 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 17:05:13 | INFO | views.whitelist_view | Tentando criar canal 'wl-ceojhon-ross-2397' para jhonross (ID: 324634477500432397)...
+2025-04-09 17:05:13 | INFO | views.whitelist_view | Canal 'wl-ceojhon-ross-2397' criado com sucesso para jhonross.
+2025-04-09 17:05:13 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-ceojhon-ross-2397
+2025-04-09 17:05:23 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 17:05:23 | INFO | root | 
+🚀 ==================================================
+2025-04-09 17:05:23 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 17:05:23 | INFO | root | 🚀 ==================================================
+2025-04-09 17:05:42 | INFO | views.whitelist_view | Usuário jhonross (ID: 324634477500432397) tentou whitelist mas está em cooldown por ~30 min.
+2025-04-09 17:06:02 | INFO | views.whitelist_view | Tentando criar canal 'wl-halion-rp-5914' para jhonross_79910 (ID: 1359218835919605914)...
+2025-04-09 17:06:02 | INFO | views.whitelist_view | Canal 'wl-halion-rp-5914' criado com sucesso para jhonross_79910.
+2025-04-09 17:06:02 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross_79910 (ID: 1359218835919605914) no canal wl-halion-rp-5914
+2025-04-09 17:06:58 | INFO | handlers.questionnaire | Questionário concluído por jhonross_79910. Atribuindo ID de Tentativa: 4
+2025-04-09 17:06:58 | INFO | handlers.questionnaire | Respostas da tentativa 4 de jhonross_79910 salvas em whitelist_respostas.csv
+2025-04-09 17:06:58 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 4.
+2025-04-09 17:06:58 | INFO | handlers.questionnaire | Finalizando questionário para jhonross_79910. Tentando deletar canal wl-halion-rp-5914...
+2025-04-09 17:07:00 | INFO | handlers.questionnaire | Canal wl-halion-rp-5914 deletado com sucesso.
+2025-04-09 17:17:57 | INFO | root | 
+⚡ ==================================================
+2025-04-09 17:17:57 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 17:17:57 | INFO | root | ⚡ ==================================================
+2025-04-09 17:17:57 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 17:17:57 | INFO | discord.client | logging in using static token
+2025-04-09 17:17:57 | INFO | root | 
+📦 ==================================================
+2025-04-09 17:17:57 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 17:17:57 | INFO | root | 📦 ==================================================
+2025-04-09 17:17:57 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 17:17:57 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 17:17:57 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 17:17:57 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 17:17:57 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 17:17:57 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 17:17:57 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 17:17:57 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 17:17:57 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 17:17:58 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 657e243088dc20d772e4e45cd7148fb6).
+2025-04-09 17:18:00 | INFO | root | 
+🤖 ==================================================
+2025-04-09 17:18:00 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 17:18:00 | INFO | root | 🤖 ==================================================
+2025-04-09 17:18:00 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 17:18:00 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 17:18:00 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 17:18:00 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 17:18:00
+2025-04-09 17:18:00 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 17:18:00 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 17:18:00 | INFO | root | 
+🔄 ==================================================
+2025-04-09 17:18:00 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 17:18:00 | INFO | root | 🔄 ==================================================
+2025-04-09 17:18:39 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 17:18:44 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 17:18:46 | INFO | views.whitelist_view | Atribuindo cargo 'Análise' para jhonross (ID: 324634477500432397).
+2025-04-09 17:18:47 | INFO | views.whitelist_view | Cargo 'Análise' atribuído com sucesso para jhonross.
+2025-04-09 17:18:47 | INFO | views.whitelist_view | Tentando criar canal 'wl-ceojhon-ross-2397' para jhonross (ID: 324634477500432397)...
+2025-04-09 17:18:47 | INFO | views.whitelist_view | Canal 'wl-ceojhon-ross-2397' criado com sucesso para jhonross.
+2025-04-09 17:18:47 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-ceojhon-ross-2397
+2025-04-09 17:18:57 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 17:18:57 | INFO | root | 
+🚀 ==================================================
+2025-04-09 17:18:57 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 17:18:57 | INFO | root | 🚀 ==================================================
+2025-04-09 17:20:11 | INFO | handlers.questionnaire | Questionário concluído por jhonross. Atribuindo ID de Tentativa: 5
+2025-04-09 17:20:11 | INFO | handlers.questionnaire | Respostas da tentativa 5 de jhonross salvas em whitelist_respostas.csv
+2025-04-09 17:20:11 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 5.
+2025-04-09 17:20:11 | INFO | handlers.questionnaire | Finalizando questionário para jhonross. Tentando deletar canal wl-ceojhon-ross-2397...
+2025-04-09 17:20:13 | INFO | handlers.questionnaire | Canal wl-ceojhon-ross-2397 deletado com sucesso.
+2025-04-09 17:45:25 | INFO | views.whitelist_view | Atribuindo cargo 'Análise' para lopesfps (ID: 908509943655698462).
+2025-04-09 17:45:25 | INFO | views.whitelist_view | Cargo 'Análise' atribuído com sucesso para lopesfps.
+2025-04-09 17:45:25 | INFO | views.whitelist_view | Tentando criar canal 'wl-adm-lucas-8462' para lopesfps (ID: 908509943655698462)...
+2025-04-09 17:45:25 | INFO | views.whitelist_view | Canal 'wl-adm-lucas-8462' criado com sucesso para lopesfps.
+2025-04-09 17:45:26 | INFO | handlers.questionnaire | Iniciando processo de questionário para: lopesfps (ID: 908509943655698462) no canal wl-adm-lucas-8462
+2025-04-09 17:50:08 | INFO | handlers.questionnaire | Questionário concluído por lopesfps. Atribuindo ID de Tentativa: 6
+2025-04-09 17:50:08 | INFO | handlers.questionnaire | Respostas da tentativa 6 de lopesfps salvas em whitelist_respostas.csv
+2025-04-09 17:50:08 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 6.
+2025-04-09 17:50:08 | INFO | handlers.questionnaire | Finalizando questionário para lopesfps. Tentando deletar canal wl-adm-lucas-8462...
+2025-04-09 17:50:10 | INFO | handlers.questionnaire | Canal wl-adm-lucas-8462 deletado com sucesso.
+2025-04-09 18:08:38 | INFO | root | 
+⚡ ==================================================
+2025-04-09 18:08:38 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 18:08:38 | INFO | root | ⚡ ==================================================
+2025-04-09 18:08:38 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 18:08:38 | INFO | discord.client | logging in using static token
+2025-04-09 18:08:38 | INFO | root | 
+📦 ==================================================
+2025-04-09 18:08:38 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 18:08:38 | INFO | root | 📦 ==================================================
+2025-04-09 18:08:38 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 18:08:38 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 18:08:38 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 18:08:38 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 18:08:38 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 18:08:39 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 18:08:39 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 18:08:39 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 18:08:39 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 18:08:41 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 5b0bbeb86343025098c50d3253569595).
+2025-04-09 18:08:43 | INFO | root | 
+🤖 ==================================================
+2025-04-09 18:08:43 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 18:08:43 | INFO | root | 🤖 ==================================================
+2025-04-09 18:08:43 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 18:08:43 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 18:08:43 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 18:08:43 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 18:08:43
+2025-04-09 18:08:43 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 18:08:43 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 18:08:43 | INFO | root | 
+🔄 ==================================================
+2025-04-09 18:08:43 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 18:08:43 | INFO | root | 🔄 ==================================================
+2025-04-09 18:09:04 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 18:09:10 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 18:09:17 | INFO | views.whitelist_view | Atribuindo cargo 'Análise' para jhonross (ID: 324634477500432397).
+2025-04-09 18:09:17 | INFO | views.whitelist_view | Cargo 'Análise' atribuído com sucesso para jhonross.
+2025-04-09 18:09:17 | INFO | views.whitelist_view | Tentando criar canal 'wl-ceojhon-ross-2397' para jhonross (ID: 324634477500432397)...
+2025-04-09 18:09:18 | INFO | views.whitelist_view | Canal 'wl-ceojhon-ross-2397' criado com sucesso para jhonross.
+2025-04-09 18:09:18 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-ceojhon-ross-2397
+2025-04-09 18:09:39 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 18:09:39 | INFO | root | 
+🚀 ==================================================
+2025-04-09 18:09:39 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 18:09:39 | INFO | root | 🚀 ==================================================
+2025-04-09 18:21:03 | INFO | root | 
+⚡ ==================================================
+2025-04-09 18:21:03 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 18:21:03 | INFO | root | ⚡ ==================================================
+2025-04-09 18:21:03 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 18:21:03 | INFO | discord.client | logging in using static token
+2025-04-09 18:21:03 | INFO | root | 
+📦 ==================================================
+2025-04-09 18:21:03 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 18:21:03 | INFO | root | 📦 ==================================================
+2025-04-09 18:21:03 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 18:21:03 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 18:21:03 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 18:21:03 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 18:21:03 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 18:21:03 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 18:21:03 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 18:21:03 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 18:21:03 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 18:21:04 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 2cd83708745dfb4b0c083505d9d67e56).
+2025-04-09 18:21:06 | INFO | root | 
+🤖 ==================================================
+2025-04-09 18:21:06 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 18:21:06 | INFO | root | 🤖 ==================================================
+2025-04-09 18:21:06 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 18:21:06 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 18:21:06 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 18:21:06 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 18:21:06
+2025-04-09 18:21:06 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 18:21:07 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 18:21:07 | INFO | root | 
+🔄 ==================================================
+2025-04-09 18:21:07 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 18:21:07 | INFO | root | 🔄 ==================================================
+2025-04-09 18:21:28 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 18:21:35 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 18:21:37 | INFO | views.whitelist_view | Membro jhonross já possui o cargo 'Análise'.
+2025-04-09 18:21:37 | INFO | views.whitelist_view | Tentando criar canal 'wl-ceojhon-ross-2397' para jhonross (ID: 324634477500432397)...
+2025-04-09 18:21:38 | INFO | views.whitelist_view | Canal 'wl-ceojhon-ross-2397' criado com sucesso para jhonross.
+2025-04-09 18:21:38 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-ceojhon-ross-2397
+2025-04-09 18:22:04 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 18:22:04 | INFO | root | 
+🚀 ==================================================
+2025-04-09 18:22:04 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 18:22:04 | INFO | root | 🚀 ==================================================
+2025-04-09 18:22:39 | INFO | handlers.questionnaire | Questionário concluído por jhonross. Atribuindo ID de Tentativa: 7
+2025-04-09 18:22:39 | INFO | handlers.questionnaire | Respostas da tentativa 7 de jhonross salvas em whitelist_respostas.csv
+2025-04-09 18:22:39 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 7.
+2025-04-09 18:22:39 | INFO | handlers.questionnaire | Finalizando questionário para jhonross. Tentando deletar canal wl-ceojhon-ross-2397...
+2025-04-09 18:22:41 | INFO | handlers.questionnaire | Canal wl-ceojhon-ross-2397 deletado com sucesso.
+2025-04-09 18:27:08 | INFO | root | 
+⚡ ==================================================
+2025-04-09 18:27:08 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 18:27:08 | INFO | root | ⚡ ==================================================
+2025-04-09 18:27:08 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 18:27:08 | INFO | discord.client | logging in using static token
+2025-04-09 18:27:09 | INFO | root | 
+📦 ==================================================
+2025-04-09 18:27:09 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 18:27:09 | INFO | root | 📦 ==================================================
+2025-04-09 18:27:09 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 18:27:09 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 18:27:09 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 18:27:09 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 18:27:09 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 18:27:09 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 18:27:09 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 18:27:09 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 18:27:09 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 18:27:09 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 0c87d789279929c3ba3add66a131f85e).
+2025-04-09 18:27:11 | INFO | root | 
+🤖 ==================================================
+2025-04-09 18:27:11 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 18:27:11 | INFO | root | 🤖 ==================================================
+2025-04-09 18:27:11 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 18:27:11 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 18:27:11 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 18:27:11 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 18:27:11
+2025-04-09 18:27:11 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 18:27:11 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 18:27:11 | INFO | root | 
+🔄 ==================================================
+2025-04-09 18:27:11 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 18:27:11 | INFO | root | 🔄 ==================================================
+2025-04-09 18:27:40 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 18:27:47 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 18:27:51 | INFO | views.whitelist_view | Atribuindo cargo 'Análise' para jhonross_79910 (ID: 1359218835919605914).
+2025-04-09 18:27:52 | INFO | views.whitelist_view | Cargo 'Análise' atribuído com sucesso para jhonross_79910.
+2025-04-09 18:27:52 | INFO | views.whitelist_view | Tentando criar canal 'wl-halion-rp-5914' para jhonross_79910 (ID: 1359218835919605914)...
+2025-04-09 18:27:52 | INFO | views.whitelist_view | Canal 'wl-halion-rp-5914' criado com sucesso para jhonross_79910.
+2025-04-09 18:27:52 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross_79910 (ID: 1359218835919605914) no canal wl-halion-rp-5914
+2025-04-09 18:28:09 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 18:28:09 | INFO | root | 
+🚀 ==================================================
+2025-04-09 18:28:09 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 18:28:09 | INFO | root | 🚀 ==================================================
+2025-04-09 18:28:51 | INFO | handlers.questionnaire | Questionário concluído por jhonross_79910. Atribuindo ID de Tentativa: 8
+2025-04-09 18:28:51 | INFO | handlers.questionnaire | Respostas da tentativa 8 de jhonross_79910 salvas em whitelist_respostas.csv com timestamp formatado.
+2025-04-09 18:28:51 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 8.
+2025-04-09 18:28:51 | INFO | handlers.questionnaire | Finalizando questionário para jhonross_79910. Tentando deletar canal wl-halion-rp-5914...
+2025-04-09 18:28:54 | INFO | handlers.questionnaire | Canal wl-halion-rp-5914 deletado com sucesso.
+2025-04-09 18:35:11 | INFO | root | 
+⚡ ==================================================
+2025-04-09 18:35:11 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 18:35:11 | INFO | root | ⚡ ==================================================
+2025-04-09 18:35:11 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 18:35:11 | INFO | discord.client | logging in using static token
+2025-04-09 18:35:12 | INFO | root | 
+📦 ==================================================
+2025-04-09 18:35:12 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 18:35:12 | INFO | root | 📦 ==================================================
+2025-04-09 18:35:12 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 18:35:12 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 18:35:12 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 18:35:12 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 18:35:12 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 18:35:12 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 18:35:12 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 18:35:12 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 18:35:12 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 18:35:13 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: c5996090913763d22b6c3838b8a15411).
+2025-04-09 18:35:15 | INFO | root | 
+🤖 ==================================================
+2025-04-09 18:35:15 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 18:35:15 | INFO | root | 🤖 ==================================================
+2025-04-09 18:35:15 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 18:35:15 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 18:35:15 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 18:35:15 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 18:35:15
+2025-04-09 18:35:15 | INFO | root | ✅ Membros em Halion RP: 15
+2025-04-09 18:35:15 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 18:35:15 | INFO | root | 
+🔄 ==================================================
+2025-04-09 18:35:15 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 18:35:15 | INFO | root | 🔄 ==================================================
+2025-04-09 18:35:33 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 18:35:38 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 18:35:40 | INFO | views.whitelist_view | Membro jhonross já possui o cargo 'Análise'.
+2025-04-09 18:35:40 | INFO | views.whitelist_view | Tentando criar canal 'wl-ceojhon-ross-2397' para jhonross (ID: 324634477500432397)...
+2025-04-09 18:35:40 | INFO | views.whitelist_view | Canal 'wl-ceojhon-ross-2397' criado com sucesso para jhonross.
+2025-04-09 18:35:40 | INFO | handlers.questionnaire | Iniciando processo de questionário para: jhonross (ID: 324634477500432397) no canal wl-ceojhon-ross-2397
+2025-04-09 18:36:12 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 18:36:12 | INFO | root | 
+🚀 ==================================================
+2025-04-09 18:36:12 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 18:36:12 | INFO | root | 🚀 ==================================================
+2025-04-09 18:36:33 | INFO | handlers.questionnaire | Questionário concluído por jhonross. Atribuindo ID de Tentativa: 9
+2025-04-09 18:36:33 | INFO | handlers.questionnaire | Respostas da tentativa 9 de jhonross salvas em whitelist_respostas.csv com timestamp local.
+2025-04-09 18:36:33 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 9.
+2025-04-09 18:36:33 | INFO | handlers.questionnaire | Finalizando questionário para jhonross. Tentando deletar canal wl-ceojhon-ross-2397...
+2025-04-09 18:36:35 | INFO | handlers.questionnaire | Canal wl-ceojhon-ross-2397 deletado com sucesso.
