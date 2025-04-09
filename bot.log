@@ -2434,3 +2434,1464 @@ aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discor
 🚀 ==================================================
 2025-04-08 16:42:59 | INFO | root | 🚀               BOT PRONTO PARA USO               
 2025-04-08 16:42:59 | INFO | root | 🚀 ==================================================
+2025-04-08 18:00:23 | INFO | cogs.verificacao | Iniciando troca de cargos (botão) para zeidfox: Visitante -> Turista
+2025-04-08 18:00:24 | INFO | cogs.verificacao | Cargo 'Turista' adicionado a zeidfox
+2025-04-08 18:00:24 | INFO | cogs.verificacao | Cargo 'Visitante' removido de zeidfox
+2025-04-08 18:40:33 | ERROR | discord.client | Attempting a reconnect in 1.79s
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1365, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1371, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-04-08 18:40:35 | ERROR | discord.client | Attempting a reconnect in 1.08s
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1365, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1371, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-04-08 18:40:36 | INFO | discord.gateway | Shard ID None has successfully RESUMED session dbf132a9ba1fa719b1bf21b089458544.
+2025-04-08 18:57:59 | INFO | root | 
+⚡ ==================================================
+2025-04-08 18:57:59 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-08 18:57:59 | INFO | root | ⚡ ==================================================
+2025-04-08 18:57:59 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-08 18:57:59 | INFO | discord.client | logging in using static token
+2025-04-08 18:58:01 | INFO | root | 
+📦 ==================================================
+2025-04-08 18:58:01 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-08 18:58:01 | INFO | root | 📦 ==================================================
+2025-04-08 18:58:01 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-08 18:58:01 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-08 18:58:01 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-08 18:58:01 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-08 18:58:01 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-08 18:58:01 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-08 18:58:01 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-08 18:58:02 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: eb89e3c19c79a6accde5981dd8fa9eb7).
+2025-04-08 18:58:04 | INFO | root | 
+🤖 ==================================================
+2025-04-08 18:58:04 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-08 18:58:04 | INFO | root | 🤖 ==================================================
+2025-04-08 18:58:04 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-08 18:58:04 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-08 18:58:04 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-08 18:58:04 | INFO | root | ✅ Horário (Log Interno): 08/04/2025 18:58:04
+2025-04-08 18:58:04 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-08 18:58:04 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-08 18:58:04 | INFO | root | 
+🔄 ==================================================
+2025-04-08 18:58:04 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-08 18:58:04 | INFO | root | 🔄 ==================================================
+2025-04-08 18:59:01 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-08 18:59:06 | INFO | root | 
+🚀 ==================================================
+2025-04-08 18:59:06 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-08 18:59:06 | INFO | root | 🚀 ==================================================
+2025-04-08 20:06:21 | INFO | root | 
+⚡ ==================================================
+2025-04-08 20:06:21 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-08 20:06:21 | INFO | root | ⚡ ==================================================
+2025-04-08 20:06:21 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-08 20:06:21 | INFO | discord.client | logging in using static token
+2025-04-08 20:06:24 | INFO | root | 
+📦 ==================================================
+2025-04-08 20:06:24 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-08 20:06:24 | INFO | root | 📦 ==================================================
+2025-04-08 20:06:24 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-08 20:06:24 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-08 20:06:24 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-08 20:06:24 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-08 20:06:24 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-08 20:06:24 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-08 20:06:24 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-08 20:06:26 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: cd754495e26c9b4ac8a4abe040a279ba).
+2025-04-08 20:06:28 | INFO | root | 
+🤖 ==================================================
+2025-04-08 20:06:28 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-08 20:06:28 | INFO | root | 🤖 ==================================================
+2025-04-08 20:06:28 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-08 20:06:28 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-08 20:06:28 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-08 20:06:28 | INFO | root | ✅ Horário (Log Interno): 08/04/2025 20:06:28
+2025-04-08 20:06:28 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-08 20:06:29 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-08 20:06:29 | INFO | root | 
+🔄 ==================================================
+2025-04-08 20:06:29 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-08 20:06:29 | INFO | root | 🔄 ==================================================
+2025-04-08 20:07:24 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-08 20:07:24 | INFO | root | 
+🚀 ==================================================
+2025-04-08 20:07:24 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-08 20:07:24 | INFO | root | 🚀 ==================================================
+2025-04-08 20:08:22 | ERROR | discord.ui.view | Ignoring exception in view <WhitelistView timeout=None children=1> for item <Button style=<ButtonStyle.success: 3> url=None disabled=False label='Quero fazer whitelist' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\Bot-HalionRP\views\whitelist_view.py", line 52, in start_whitelist
+    await start_questionnaire(member, channel)
+  File "D:\Bot-HalionRP\handlers\questionnaire.py", line 69, in start_questionnaire
+    msg = await channel.bot.wait_for('message', check=check, timeout=remaining_time)
+                ^^^^^^^^^^^
+AttributeError: 'TextChannel' object has no attribute 'bot'
+2025-04-08 20:12:44 | INFO | root | 
+⚡ ==================================================
+2025-04-08 20:12:44 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-08 20:12:44 | INFO | root | ⚡ ==================================================
+2025-04-08 20:12:44 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-08 20:12:44 | INFO | discord.client | logging in using static token
+2025-04-08 20:12:45 | INFO | root | 
+📦 ==================================================
+2025-04-08 20:12:45 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-08 20:12:45 | INFO | root | 📦 ==================================================
+2025-04-08 20:12:45 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-08 20:12:45 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-08 20:12:45 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-08 20:12:45 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-08 20:12:45 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-08 20:12:45 | ERROR | root | ❌ Falha no setup de cogs.whitelist: NameError
+2025-04-08 20:12:45 | ERROR | root | Erro ao carregar cogs.whitelist:
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Bot-HalionRP\cogs\whitelist.py", line 4, in <module>
+    from views.whitelist_view import WhitelistView
+  File "D:\Bot-HalionRP\views\whitelist_view.py", line 4, in <module>
+    from handlers.questionnaire import start_questionnaire
+  File "D:\Bot-HalionRP\handlers\questionnaire.py", line 1, in <module>
+    async def start_questionnaire(member: discord.Member, channel: discord.TextChannel, bot: discord.Client):
+                                          ^^^^^^^
+NameError: name 'discord' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Bot-HalionRP\main.py", line 84, in load_extensions
+    await self.load_extension(cog_name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.whitelist' raised an error: NameError: name 'discord' is not defined
+
+2025-04-08 20:12:45 | INFO | root | ℹ️ Total carregado: 2 | Ignorados: 0
+2025-04-08 20:12:45 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: e71459c8eaaf437a0062413e45ec6f81).
+2025-04-08 20:12:47 | INFO | root | 
+🤖 ==================================================
+2025-04-08 20:12:47 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-08 20:12:47 | INFO | root | 🤖 ==================================================
+2025-04-08 20:12:47 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-08 20:12:47 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-08 20:12:47 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-08 20:12:47 | INFO | root | ✅ Horário (Log Interno): 08/04/2025 20:12:47
+2025-04-08 20:12:47 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-08 20:12:48 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-08 20:12:48 | INFO | root | 
+🔄 ==================================================
+2025-04-08 20:12:48 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-08 20:12:48 | INFO | root | 🔄 ==================================================
+2025-04-08 20:12:48 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 2
+2025-04-08 20:12:48 | INFO | root | 
+🚀 ==================================================
+2025-04-08 20:12:48 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-08 20:12:48 | INFO | root | 🚀 ==================================================
+2025-04-08 20:18:22 | INFO | root | 
+⚡ ==================================================
+2025-04-08 20:18:22 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-08 20:18:22 | INFO | root | ⚡ ==================================================
+2025-04-08 20:18:22 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-08 20:18:22 | INFO | discord.client | logging in using static token
+2025-04-08 20:18:23 | INFO | root | 
+📦 ==================================================
+2025-04-08 20:18:23 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-08 20:18:23 | INFO | root | 📦 ==================================================
+2025-04-08 20:18:23 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-08 20:18:23 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-08 20:18:23 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-08 20:18:23 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-08 20:18:23 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-08 20:18:23 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-08 20:18:23 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-08 20:18:24 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 1a0da2c6a8344f25eaea95e380866e2a).
+2025-04-08 20:18:26 | INFO | root | 
+🤖 ==================================================
+2025-04-08 20:18:26 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-08 20:18:26 | INFO | root | 🤖 ==================================================
+2025-04-08 20:18:26 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-08 20:18:26 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-08 20:18:26 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-08 20:18:26 | INFO | root | ✅ Horário (Log Interno): 08/04/2025 20:18:26
+2025-04-08 20:18:26 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-08 20:18:26 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-08 20:18:26 | INFO | root | 
+🔄 ==================================================
+2025-04-08 20:18:26 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-08 20:18:26 | INFO | root | 🔄 ==================================================
+2025-04-08 20:19:23 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-08 20:19:23 | INFO | root | 
+🚀 ==================================================
+2025-04-08 20:19:23 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-08 20:19:23 | INFO | root | 🚀 ==================================================
+2025-04-08 20:19:41 | ERROR | discord.ui.view | Ignoring exception in view <WhitelistView timeout=None children=1> for item <Button style=<ButtonStyle.success: 3> url=None disabled=False label='Quero fazer whitelist' emoji=None row=None sku_id=None>
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ui\view.py", line 435, in _scheduled_task
+    await item.callback(interaction)
+  File "D:\Bot-HalionRP\views\whitelist_view.py", line 52, in start_whitelist
+    await start_questionnaire(member, channel, interaction.client)
+  File "D:\Bot-HalionRP\handlers\questionnaire.py", line 10, in start_questionnaire
+    if member.id in cooldowns and cooldowns[member.id] > now:
+                    ^^^^^^^^^
+NameError: name 'cooldowns' is not defined
+2025-04-08 20:24:29 | INFO | root | 
+⚡ ==================================================
+2025-04-08 20:24:29 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-08 20:24:29 | INFO | root | ⚡ ==================================================
+2025-04-08 20:24:29 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-08 20:24:29 | INFO | discord.client | logging in using static token
+2025-04-08 20:24:29 | INFO | root | 
+📦 ==================================================
+2025-04-08 20:24:29 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-08 20:24:29 | INFO | root | 📦 ==================================================
+2025-04-08 20:24:29 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-08 20:24:29 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-08 20:24:29 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-08 20:24:29 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-08 20:24:29 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-08 20:24:30 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-08 20:24:30 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-08 20:24:30 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 0cd57c1d99db2913d4262c44b5a741e0).
+2025-04-08 20:24:32 | INFO | root | 
+🤖 ==================================================
+2025-04-08 20:24:32 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-08 20:24:32 | INFO | root | 🤖 ==================================================
+2025-04-08 20:24:32 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-08 20:24:32 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-08 20:24:32 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-08 20:24:32 | INFO | root | ✅ Horário (Log Interno): 08/04/2025 20:24:32
+2025-04-08 20:24:32 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-08 20:24:33 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-08 20:24:33 | INFO | root | 
+🔄 ==================================================
+2025-04-08 20:24:33 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-08 20:24:33 | INFO | root | 🔄 ==================================================
+2025-04-08 20:25:30 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-08 20:25:30 | INFO | root | 
+🚀 ==================================================
+2025-04-08 20:25:30 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-08 20:25:30 | INFO | root | 🚀 ==================================================
+2025-04-09 10:11:29 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:11:29 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:11:29 | INFO | root | ⚡ ==================================================
+2025-04-09 10:11:29 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:11:29 | INFO | discord.client | logging in using static token
+2025-04-09 10:11:31 | INFO | root | 
+📦 ==================================================
+2025-04-09 10:11:31 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 10:11:31 | INFO | root | 📦 ==================================================
+2025-04-09 10:11:31 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 10:11:31 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 10:11:31 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 10:11:31 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 10:11:31 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 10:11:32 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 10:11:32 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 10:11:32 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: de376dd0884f48c98a2452ad1c4ef01f).
+2025-04-09 10:11:34 | INFO | root | 
+🤖 ==================================================
+2025-04-09 10:11:34 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 10:11:34 | INFO | root | 🤖 ==================================================
+2025-04-09 10:11:34 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 10:11:34 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 10:11:34 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 10:11:34 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 10:11:34
+2025-04-09 10:11:34 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 10:11:34 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 10:11:34 | INFO | root | 
+🔄 ==================================================
+2025-04-09 10:11:34 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 10:11:34 | INFO | root | 🔄 ==================================================
+2025-04-09 10:12:17 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 10:12:32 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 10:12:32 | INFO | root | 
+🚀 ==================================================
+2025-04-09 10:12:32 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 10:12:32 | INFO | root | 🚀 ==================================================
+2025-04-09 10:17:52 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross_79910 no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 10:18:00 | INFO | cogs.moderacao | jhonross_79910 (1359218835919605914) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 10:42:55 | INFO | cogs.moderacao | jhonross_79910 (1359218835919605914) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 10:43:04 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross_79910 no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 10:43:18 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:43:18 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:43:18 | INFO | root | ⚡ ==================================================
+2025-04-09 10:43:18 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:43:18 | INFO | discord.client | logging in using static token
+2025-04-09 10:43:21 | INFO | root | 
+📦 ==================================================
+2025-04-09 10:43:21 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 10:43:21 | INFO | root | 📦 ==================================================
+2025-04-09 10:43:21 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 10:43:21 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 10:43:21 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 10:43:21 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 10:43:21 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 10:43:21 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 10:43:21 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 10:43:21 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: cd00b14aadcd9fb0333f1148b06ae4d9).
+2025-04-09 10:43:23 | INFO | root | 
+🤖 ==================================================
+2025-04-09 10:43:23 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 10:43:23 | INFO | root | 🤖 ==================================================
+2025-04-09 10:43:23 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 10:43:23 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 10:43:23 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 10:43:23 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 10:43:23
+2025-04-09 10:43:23 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 10:43:24 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 10:43:24 | INFO | root | 
+🔄 ==================================================
+2025-04-09 10:43:24 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 10:43:24 | INFO | root | 🔄 ==================================================
+2025-04-09 10:43:39 | ERROR | asyncio | Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py:1149> exception=TypeError("ModeracaoCog.<lambda>() missing 1 required positional argument: 'interaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 879, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\utils.py", line 725, in async_all
+    for elem in gen:
+                ^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in <genexpr>
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+                           ~^^^^^^^^^^^^^
+TypeError: ModeracaoCog.<lambda>() missing 1 required positional argument: 'interaction'
+2025-04-09 10:44:21 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 10:44:21 | INFO | root | 
+🚀 ==================================================
+2025-04-09 10:44:21 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 10:44:21 | INFO | root | 🚀 ==================================================
+2025-04-09 10:44:26 | ERROR | asyncio | Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py:1149> exception=TypeError("ModeracaoCog.<lambda>() missing 1 required positional argument: 'interaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 879, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\utils.py", line 725, in async_all
+    for elem in gen:
+                ^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in <genexpr>
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+                           ~^^^^^^^^^^^^^
+TypeError: ModeracaoCog.<lambda>() missing 1 required positional argument: 'interaction'
+2025-04-09 10:45:41 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:45:41 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:45:41 | INFO | root | ⚡ ==================================================
+2025-04-09 10:45:41 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:45:41 | INFO | discord.client | logging in using static token
+2025-04-09 10:45:43 | INFO | root | 
+📦 ==================================================
+2025-04-09 10:45:43 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 10:45:43 | INFO | root | 📦 ==================================================
+2025-04-09 10:45:43 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 10:45:43 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 10:45:43 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 10:45:43 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 10:45:43 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 10:45:43 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 10:45:43 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 10:45:44 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 56b01f65743e2b0406b5726abb8d15a9).
+2025-04-09 10:45:46 | INFO | root | 
+🤖 ==================================================
+2025-04-09 10:45:46 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 10:45:46 | INFO | root | 🤖 ==================================================
+2025-04-09 10:45:46 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 10:45:46 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 10:45:46 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 10:45:46 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 10:45:46
+2025-04-09 10:45:46 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 10:45:46 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 10:45:46 | INFO | root | 
+🔄 ==================================================
+2025-04-09 10:45:46 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 10:45:46 | INFO | root | 🔄 ==================================================
+2025-04-09 10:46:02 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 10:46:08 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 10:46:27 | INFO | cogs.moderacao | jhonross_79910 (1359218835919605914) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 10:46:43 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 10:46:43 | INFO | root | 
+🚀 ==================================================
+2025-04-09 10:46:43 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 10:46:43 | INFO | root | 🚀 ==================================================
+2025-04-09 10:47:21 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:47:21 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:47:21 | INFO | root | ⚡ ==================================================
+2025-04-09 10:47:21 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:47:21 | INFO | discord.client | logging in using static token
+2025-04-09 10:47:22 | INFO | root | 
+📦 ==================================================
+2025-04-09 10:47:22 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 10:47:22 | INFO | root | 📦 ==================================================
+2025-04-09 10:47:22 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 10:47:22 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 10:47:22 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 10:47:22 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 10:47:22 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 10:47:22 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 10:47:22 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 10:47:23 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: c7bf6eda69435284c8fc3132a83bed38).
+2025-04-09 10:47:25 | INFO | root | 
+🤖 ==================================================
+2025-04-09 10:47:25 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 10:47:25 | INFO | root | 🤖 ==================================================
+2025-04-09 10:47:25 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 10:47:25 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 10:47:25 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 10:47:25 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 10:47:25
+2025-04-09 10:47:25 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 10:47:25 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 10:47:25 | INFO | root | 
+🔄 ==================================================
+2025-04-09 10:47:25 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 10:47:25 | INFO | root | 🔄 ==================================================
+2025-04-09 10:47:40 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 10:47:47 | WARNING | cogs.moderacao | Usuário jhonross_79910 tentou usar /excluir sem cargo permitido.
+2025-04-09 10:48:22 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 10:48:22 | INFO | root | 
+🚀 ==================================================
+2025-04-09 10:48:22 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 10:48:22 | INFO | root | 🚀 ==================================================
+2025-04-09 10:58:58 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:58:58 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:58:58 | INFO | root | ⚡ ==================================================
+2025-04-09 10:58:58 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:58:58 | INFO | discord.client | logging in using static token
+2025-04-09 10:58:59 | ERROR | root | ❌ ERRO FATAL NA INICIALIZAÇÃO: ClientConnectorDNSError - Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+2025-04-09 10:58:59 | CRITICAL | root | Erro não tratado durante a inicialização:
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1365, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Bot-HalionRP\main.py", line 448, in main
+    await bot.start(TOKEN)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 823, in start
+    await self.login(token)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 652, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 828, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 642, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1371, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+
+2025-04-09 10:58:59 | INFO | root | ℹ️ Bot encerrado.
+2025-04-09 10:59:31 | INFO | root | 
+⚡ ==================================================
+2025-04-09 10:59:31 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 10:59:31 | INFO | root | ⚡ ==================================================
+2025-04-09 10:59:31 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 10:59:31 | INFO | discord.client | logging in using static token
+2025-04-09 10:59:32 | INFO | root | 
+📦 ==================================================
+2025-04-09 10:59:32 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 10:59:32 | INFO | root | 📦 ==================================================
+2025-04-09 10:59:32 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 10:59:32 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 10:59:32 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 10:59:32 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 10:59:32 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 10:59:32 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 10:59:32 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 10:59:33 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: d0f5e224be6992bd56250ca42a083f88).
+2025-04-09 11:00:03 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:00:03 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:00:03 | INFO | root | ⚡ ==================================================
+2025-04-09 11:00:03 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:00:03 | INFO | discord.client | logging in using static token
+2025-04-09 11:00:03 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:00:03 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:00:03 | INFO | root | 📦 ==================================================
+2025-04-09 11:00:03 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:00:03 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:00:03 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 11:00:03 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 11:00:03 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:00:04 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:00:04 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:00:04 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: da317513f63c48885b944fc218fbf624).
+2025-04-09 11:00:06 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:00:06 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:00:06 | INFO | root | 🤖 ==================================================
+2025-04-09 11:00:06 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:00:06 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:00:06 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:00:06 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:00:06
+2025-04-09 11:00:06 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:00:07 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:00:07 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:00:07 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:00:07 | INFO | root | 🔄 ==================================================
+2025-04-09 11:00:15 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 11:00:24 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos ({1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}).
+2025-04-09 11:00:24 | ERROR | cogs.verificacao | Erro não tratado para 'verificar' no VerificacaoCog por jhonross_79910: The check functions for command 'verificar' failed.
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:01:04 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:01:04 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:01:04 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:01:04 | INFO | root | 🚀 ==================================================
+2025-04-09 11:01:14 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos ({1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}).
+2025-04-09 11:01:14 | ERROR | cogs.verificacao | Erro não tratado para 'verificar' no VerificacaoCog por jhonross_79910: The check functions for command 'verificar' failed.
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:01:20 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 11:15:33 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:15:33 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:15:33 | INFO | root | ⚡ ==================================================
+2025-04-09 11:15:33 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:15:33 | INFO | discord.client | logging in using static token
+2025-04-09 11:15:33 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:15:33 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:15:33 | INFO | root | 📦 ==================================================
+2025-04-09 11:15:33 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:15:33 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:15:33 | ERROR | root | ❌ Falha no setup de cogs.verificacao: AttributeError
+2025-04-09 11:15:33 | ERROR | root | Erro ao carregar cogs.verificacao:
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Bot-HalionRP\cogs\verificacao.py", line 206, in <module>
+    class VerificacaoCog(commands.Cog):
+    ...<115 lines>...
+                )
+  File "D:\Bot-HalionRP\cogs\verificacao.py", line 217, in VerificacaoCog
+    @app_commands.check(VerificationSystem.check_user_has_mod_role)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'VerificationSystem' has no attribute 'check_user_has_mod_role'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Bot-HalionRP\main.py", line 84, in load_extensions
+    await self.load_extension(cog_name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.verificacao' raised an error: AttributeError: type object 'VerificationSystem' has no attribute 'check_user_has_mod_role'
+
+2025-04-09 11:15:33 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:15:33 | INFO | root | ℹ️ Total carregado: 2 | Ignorados: 0
+2025-04-09 11:15:34 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 1f094cbe35afaf2a2f8f6d7bb2f3d716).
+2025-04-09 11:15:36 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:15:36 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:15:36 | INFO | root | 🤖 ==================================================
+2025-04-09 11:15:36 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:15:36 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:15:36 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:15:36 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:15:36
+2025-04-09 11:15:36 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:15:36 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:15:36 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:15:36 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:15:36 | INFO | root | 🔄 ==================================================
+2025-04-09 11:16:33 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 2
+2025-04-09 11:16:33 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:16:33 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:16:33 | INFO | root | 🚀 ==================================================
+2025-04-09 11:19:03 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:19:03 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:19:03 | INFO | root | ⚡ ==================================================
+2025-04-09 11:19:03 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:19:03 | INFO | discord.client | logging in using static token
+2025-04-09 11:19:05 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:19:05 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:19:05 | INFO | root | 📦 ==================================================
+2025-04-09 11:19:05 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:19:05 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:19:05 | ERROR | root | ❌ Falha no setup de cogs.verificacao: AttributeError
+2025-04-09 11:19:05 | ERROR | root | Erro ao carregar cogs.verificacao:
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Bot-HalionRP\cogs\verificacao.py", line 216, in <module>
+    class VerificacaoCog(commands.Cog):
+    ...<115 lines>...
+                )
+  File "D:\Bot-HalionRP\cogs\verificacao.py", line 227, in VerificacaoCog
+    @app_commands.check(VerificationSystem.check_user_has_mod_role)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'VerificationSystem' has no attribute 'check_user_has_mod_role'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Bot-HalionRP\main.py", line 84, in load_extensions
+    await self.load_extension(cog_name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.verificacao' raised an error: AttributeError: type object 'VerificationSystem' has no attribute 'check_user_has_mod_role'
+
+2025-04-09 11:19:06 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:19:06 | INFO | root | ℹ️ Total carregado: 2 | Ignorados: 0
+2025-04-09 11:19:08 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: c707cd8fd6df3aa473a636035f399486).
+2025-04-09 11:19:10 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:19:10 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:19:10 | INFO | root | 🤖 ==================================================
+2025-04-09 11:19:10 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:19:10 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:19:10 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:19:10 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:19:10
+2025-04-09 11:19:10 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:19:10 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:19:10 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:19:10 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:19:10 | INFO | root | 🔄 ==================================================
+2025-04-09 11:20:06 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 2
+2025-04-09 11:20:06 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:20:06 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:20:06 | INFO | root | 🚀 ==================================================
+2025-04-09 11:22:07 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:22:07 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:22:07 | INFO | root | ⚡ ==================================================
+2025-04-09 11:22:07 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:22:08 | INFO | discord.client | logging in using static token
+2025-04-09 11:22:08 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:22:08 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:22:08 | INFO | root | 📦 ==================================================
+2025-04-09 11:22:08 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:22:08 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:22:08 | INFO | cogs.verificacao | View VerificarView registrada
+2025-04-09 11:22:08 | INFO | cogs.verificacao | Cog VerificacaoCog carregado
+2025-04-09 11:22:08 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:22:08 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:22:08 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:22:09 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 374b872827ab6a3e16ecba800fc4b751).
+2025-04-09 11:22:11 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:22:11 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:22:11 | INFO | root | 🤖 ==================================================
+2025-04-09 11:22:11 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:22:11 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:22:11 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:22:11 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:22:11
+2025-04-09 11:22:11 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:22:11 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:22:11 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:22:11 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:22:11 | INFO | root | 🔄 ==================================================
+2025-04-09 11:22:29 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 11:22:39 | INFO | cogs.verificacao | Painel enviado por jhonross em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 11:22:49 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 11:23:08 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:23:08 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:23:08 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:23:08 | INFO | root | 🚀 ==================================================
+2025-04-09 11:25:45 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:25:45 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:25:45 | INFO | root | ⚡ ==================================================
+2025-04-09 11:25:45 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:25:45 | INFO | discord.client | logging in using static token
+2025-04-09 11:25:46 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:25:46 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:25:46 | INFO | root | 📦 ==================================================
+2025-04-09 11:25:46 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:25:46 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:25:46 | INFO | cogs.verificacao | View VerificarView registrada
+2025-04-09 11:25:46 | INFO | cogs.verificacao | Cog VerificacaoCog carregado
+2025-04-09 11:25:46 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:25:46 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:25:46 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:25:47 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 3f2cbd43a1569adc64ebb437db4e1e34).
+2025-04-09 11:25:49 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:25:49 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:25:49 | INFO | root | 🤖 ==================================================
+2025-04-09 11:25:49 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:25:49 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:25:49 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:25:49 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:25:49
+2025-04-09 11:25:49 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:25:49 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:25:49 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:25:49 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:25:49 | INFO | root | 🔄 ==================================================
+2025-04-09 11:26:23 | ERROR | discord.app_commands.tree | Ignoring exception in command 'verificar'
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:26:46 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:26:46 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:26:46 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:26:46 | INFO | root | 🚀 ==================================================
+2025-04-09 11:27:20 | ERROR | discord.app_commands.tree | Ignoring exception in command 'verificar'
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:31:16 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:31:16 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:31:16 | INFO | root | ⚡ ==================================================
+2025-04-09 11:31:16 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:31:16 | INFO | discord.client | logging in using static token
+2025-04-09 11:31:16 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:31:16 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:31:16 | INFO | root | 📦 ==================================================
+2025-04-09 11:31:16 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:31:16 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:31:16 | INFO | cogs.verificacao | View VerificarView registrada
+2025-04-09 11:31:16 | INFO | cogs.verificacao | Cog VerificacaoCog carregado
+2025-04-09 11:31:16 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:31:16 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:31:16 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:31:17 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: f966fd8f8bcbd67b50dd123107c09cf2).
+2025-04-09 11:31:19 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:31:19 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:31:19 | INFO | root | 🤖 ==================================================
+2025-04-09 11:31:19 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:31:19 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:31:19 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:31:19 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:31:19
+2025-04-09 11:31:19 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:31:19 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:31:19 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:31:19 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:31:19 | INFO | root | 🔄 ==================================================
+2025-04-09 11:32:16 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:32:16 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:32:16 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:32:16 | INFO | root | 🚀 ==================================================
+2025-04-09 11:33:05 | ERROR | discord.app_commands.tree | Ignoring exception in command 'verificar'
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:44:03 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:44:03 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:44:03 | INFO | root | ⚡ ==================================================
+2025-04-09 11:44:03 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:44:03 | INFO | discord.client | logging in using static token
+2025-04-09 11:44:04 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:44:04 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:44:04 | INFO | root | 📦 ==================================================
+2025-04-09 11:44:04 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:44:04 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:44:04 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 11:44:04 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 11:44:04 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:44:04 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:44:04 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:44:07 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 293c219c7b3cf0ea27b7197cd8a96a05).
+2025-04-09 11:44:09 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:44:09 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:44:09 | INFO | root | 🤖 ==================================================
+2025-04-09 11:44:09 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:44:09 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:44:09 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:44:09 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:44:09
+2025-04-09 11:44:09 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:44:09 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:44:09 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:44:09 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:44:09 | INFO | root | 🔄 ==================================================
+2025-04-09 11:44:24 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 11:44:42 | WARNING | cogs.moderacao | Usuário jhonross_79910 tentou usar /excluir sem cargo permitido.
+2025-04-09 11:44:59 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos ({1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}).
+2025-04-09 11:44:59 | ERROR | cogs.verificacao | Erro não tratado para 'verificar' no VerificacaoCog por jhonross_79910: The check functions for command 'verificar' failed.
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:45:04 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:45:04 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:45:04 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:45:04 | INFO | root | 🚀 ==================================================
+2025-04-09 11:46:23 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos ({1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}).
+2025-04-09 11:46:23 | ERROR | cogs.verificacao | Erro não tratado para 'verificar' no VerificacaoCog por jhonross_79910: The check functions for command 'verificar' failed.
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 880, in _invoke_with_namespace
+    raise CheckFailure(f'The check functions for command {self.name!r} failed.')
+discord.app_commands.errors.CheckFailure: The check functions for command 'verificar' failed.
+2025-04-09 11:52:54 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:52:54 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:52:54 | INFO | root | ⚡ ==================================================
+2025-04-09 11:52:54 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:52:54 | INFO | discord.client | logging in using static token
+2025-04-09 11:52:55 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:52:55 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:52:55 | INFO | root | 📦 ==================================================
+2025-04-09 11:52:55 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:52:55 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:52:55 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 11:52:55 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 11:52:55 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:52:56 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:52:56 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:52:56 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 20d401204c12c060e3493125827e2dab).
+2025-04-09 11:52:58 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:52:58 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:52:58 | INFO | root | 🤖 ==================================================
+2025-04-09 11:52:58 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:52:58 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:52:58 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:52:58 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:52:58
+2025-04-09 11:52:58 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:52:58 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:52:58 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:52:58 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:52:58 | INFO | root | 🔄 ==================================================
+2025-04-09 11:53:20 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos ({1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}).
+2025-04-09 11:53:56 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 11:53:56 | INFO | root | 
+🚀 ==================================================
+2025-04-09 11:53:56 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 11:53:56 | INFO | root | 🚀 ==================================================
+2025-04-09 11:55:05 | WARNING | cogs.moderacao | Usuário jhonross_79910 tentou usar /excluir sem cargo permitido.
+2025-04-09 11:55:23 | INFO | cogs.verificacao | Iniciando troca de cargos (botão) para expertgame: Visitante -> Turista
+2025-04-09 11:55:23 | INFO | cogs.verificacao | Cargo 'Turista' adicionado a expertgame
+2025-04-09 11:55:24 | INFO | cogs.verificacao | Cargo 'Visitante' removido de expertgame
+2025-04-09 11:59:41 | INFO | root | 
+⚡ ==================================================
+2025-04-09 11:59:41 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 11:59:41 | INFO | root | ⚡ ==================================================
+2025-04-09 11:59:41 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 11:59:41 | INFO | discord.client | logging in using static token
+2025-04-09 11:59:43 | INFO | root | 
+📦 ==================================================
+2025-04-09 11:59:43 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 11:59:43 | INFO | root | 📦 ==================================================
+2025-04-09 11:59:43 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 11:59:43 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 11:59:43 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 11:59:43 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 11:59:43 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 11:59:44 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 11:59:44 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 11:59:46 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 4565050553637e11d9b4e9e6c26e857e).
+2025-04-09 11:59:48 | INFO | root | 
+🤖 ==================================================
+2025-04-09 11:59:48 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 11:59:48 | INFO | root | 🤖 ==================================================
+2025-04-09 11:59:48 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 11:59:48 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 11:59:48 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 11:59:48 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 11:59:48
+2025-04-09 11:59:48 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 11:59:48 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 11:59:48 | INFO | root | 
+🔄 ==================================================
+2025-04-09 11:59:48 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 11:59:48 | INFO | root | 🔄 ==================================================
+2025-04-09 12:00:16 | WARNING | cogs.moderacao | Usuário jhonross_79910 tentou usar /excluir sem cargo permitido.
+2025-04-09 12:00:25 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'verificar'. Não possui cargos permitidos.
+2025-04-09 12:00:44 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 12:00:44 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:00:44 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:00:44 | INFO | root | 🚀 ==================================================
+2025-04-09 12:04:22 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 2 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 12:09:39 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:09:39 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:09:39 | INFO | root | ⚡ ==================================================
+2025-04-09 12:09:39 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:09:39 | INFO | discord.client | logging in using static token
+2025-04-09 12:09:41 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:09:41 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:09:41 | INFO | root | 📦 ==================================================
+2025-04-09 12:09:41 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:09:41 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:09:41 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:09:41 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:09:41 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:09:41 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:09:41 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:09:41 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:09:41 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:09:43 | ERROR | discord.client | Attempting a reconnect in 0.35s
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1365, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1371, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway.discord.gg:443 ssl:default [getaddrinfo failed]
+2025-04-09 12:09:44 | ERROR | root | ❌ ERRO FATAL NA INICIALIZAÇÃO: AttributeError - 'NoneType' object has no attribute 'sequence'
+2025-04-09 12:09:44 | CRITICAL | root | Erro não tratado durante a inicialização:
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1365, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 939, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\aiohttp\connector.py", line 1371, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway.discord.gg:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Bot-HalionRP\main.py", line 448, in main
+    await bot.start(TOKEN)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 824, in start
+    await self.connect(reconnect=reconnect)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\client.py", line 760, in connect
+    sequence=self.ws.sequence,
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'sequence'
+
+2025-04-09 12:09:44 | INFO | root | ℹ️ Bot encerrado.
+2025-04-09 12:09:57 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:09:57 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:09:57 | INFO | root | ⚡ ==================================================
+2025-04-09 12:09:57 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:09:57 | INFO | discord.client | logging in using static token
+2025-04-09 12:09:58 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:09:58 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:09:58 | INFO | root | 📦 ==================================================
+2025-04-09 12:09:58 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:09:58 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:09:58 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:09:58 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:09:58 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:10:29 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:10:29 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:10:29 | INFO | root | ⚡ ==================================================
+2025-04-09 12:10:29 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:10:29 | INFO | discord.client | logging in using static token
+2025-04-09 12:10:30 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:10:30 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:10:30 | INFO | root | 📦 ==================================================
+2025-04-09 12:10:30 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:10:30 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:10:30 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:10:30 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:10:30 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:11:11 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:11:11 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:11:11 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:11:11 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:11:12 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: aad00ca5c3a3b326b564dc2f8f6965a1).
+2025-04-09 12:11:14 | INFO | root | 
+🤖 ==================================================
+2025-04-09 12:11:14 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 12:11:14 | INFO | root | 🤖 ==================================================
+2025-04-09 12:11:14 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 12:11:14 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 12:11:14 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 12:11:14 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 12:11:14
+2025-04-09 12:11:14 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 12:11:14 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 12:11:14 | INFO | root | 
+🔄 ==================================================
+2025-04-09 12:11:14 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 12:11:14 | INFO | root | 🔄 ==================================================
+2025-04-09 12:11:15 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 12:11:15 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:11:15 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:11:15 | INFO | root | 🚀 ==================================================
+2025-04-09 12:11:57 | WARNING | cogs.verificacao | Usuário jhonross_79910 (ID: 1359218835919605914) negado acesso ao comando 'whitelist'. Não possui cargos permitidos.
+2025-04-09 12:15:39 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 12:20:29 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:20:29 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:20:29 | INFO | root | ⚡ ==================================================
+2025-04-09 12:20:29 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:20:29 | INFO | discord.client | logging in using static token
+2025-04-09 12:20:29 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:20:29 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:20:29 | INFO | root | 📦 ==================================================
+2025-04-09 12:20:29 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:20:29 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:20:29 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:20:29 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:20:29 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:20:30 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:20:30 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:20:30 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:20:30 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:20:30 | INFO | root | WhitelistView registrada para persistência.
+2025-04-09 12:20:30 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 3e1bfc2e0b1e03a0f3d4f90a344e120f).
+2025-04-09 12:20:32 | INFO | root | 
+🤖 ==================================================
+2025-04-09 12:20:32 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 12:20:32 | INFO | root | 🤖 ==================================================
+2025-04-09 12:20:32 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 12:20:32 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 12:20:32 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 12:20:32 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 12:20:32
+2025-04-09 12:20:32 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 12:20:32 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 12:20:32 | INFO | root | 
+🔄 ==================================================
+2025-04-09 12:20:32 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 12:20:32 | INFO | root | 🔄 ==================================================
+2025-04-09 12:21:30 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 0
+2025-04-09 12:21:30 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:21:30 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:21:30 | INFO | root | 🚀 ==================================================
+2025-04-09 12:22:14 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:22:14 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:22:14 | INFO | root | ⚡ ==================================================
+2025-04-09 12:22:14 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:22:14 | INFO | discord.client | logging in using static token
+2025-04-09 12:22:15 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:22:15 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:22:15 | INFO | root | 📦 ==================================================
+2025-04-09 12:22:15 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:22:15 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:22:15 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:22:15 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:22:15 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:22:15 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:22:15 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:22:15 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:22:15 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:22:15 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 972111bfceaf86e97fbf9e1cd4180f57).
+2025-04-09 12:22:17 | INFO | root | 
+🤖 ==================================================
+2025-04-09 12:22:17 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 12:22:17 | INFO | root | 🤖 ==================================================
+2025-04-09 12:22:17 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 12:22:17 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 12:22:17 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 12:22:17 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 12:22:17
+2025-04-09 12:22:17 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 12:22:18 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 12:22:18 | INFO | root | 
+🔄 ==================================================
+2025-04-09 12:22:18 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 12:22:18 | INFO | root | 🔄 ==================================================
+2025-04-09 12:23:15 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 12:23:15 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:23:15 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:23:15 | INFO | root | 🚀 ==================================================
+2025-04-09 12:26:40 | INFO | root | 
+⚡ ==================================================
+2025-04-09 12:26:40 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-09 12:26:40 | INFO | root | ⚡ ==================================================
+2025-04-09 12:26:40 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-09 12:26:40 | INFO | discord.client | logging in using static token
+2025-04-09 12:26:40 | INFO | root | 
+📦 ==================================================
+2025-04-09 12:26:40 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-09 12:26:40 | INFO | root | 📦 ==================================================
+2025-04-09 12:26:40 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-09 12:26:40 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-09 12:26:40 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-09 12:26:40 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-09 12:26:40 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-09 12:26:41 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-09 12:26:41 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-09 12:26:41 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-09 12:26:41 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-09 12:26:41 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 1bdab76510550230123bcb618f940450).
+2025-04-09 12:26:43 | INFO | root | 
+🤖 ==================================================
+2025-04-09 12:26:43 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-09 12:26:43 | INFO | root | 🤖 ==================================================
+2025-04-09 12:26:43 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-09 12:26:43 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-09 12:26:43 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-09 12:26:43 | INFO | root | ✅ Horário (Log Interno): 09/04/2025 12:26:43
+2025-04-09 12:26:43 | INFO | root | ✅ Membros em Halion RP: 16
+2025-04-09 12:26:43 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-09 12:26:43 | INFO | root | 
+🔄 ==================================================
+2025-04-09 12:26:43 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-09 12:26:43 | INFO | root | 🔄 ==================================================
+2025-04-09 12:27:13 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 100 mensagens em #logs-discord (1168518830377685002)
+2025-04-09 12:27:29 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1176966689808719953 responded with 429. Retrying in 0.30 seconds.
+2025-04-09 12:27:30 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1176966231543263383 responded with 429. Retrying in 0.48 seconds.
+2025-04-09 12:27:31 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1176966210454294638 responded with 429. Retrying in 0.58 seconds.
+2025-04-09 12:27:32 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1175589458603683891 responded with 429. Retrying in 0.49 seconds.
+2025-04-09 12:27:33 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1175582414253334608 responded with 429. Retrying in 0.44 seconds.
+2025-04-09 12:27:34 | WARNING | discord.http | We are being rate limited. DELETE https://discord.com/api/v10/channels/1168518830377685002/messages/1175573772443602974 responded with 429. Retrying in 0.49 seconds.
+2025-04-09 12:27:35 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 96 mensagens em #logs-discord (1168518830377685002)
+2025-04-09 12:27:41 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-09 12:27:41 | INFO | root | 
+🚀 ==================================================
+2025-04-09 12:27:41 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-09 12:27:41 | INFO | root | 🚀 ==================================================
+2025-04-09 12:27:56 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-09 12:28:01 | INFO | cogs.whitelist | Comando /whitelist executado por jhonross no canal 📖・whitelist
+2025-04-09 12:28:09 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-09 12:28:13 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-09 12:28:54 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 2 mensagens em #logs-discord (1168518830377685002)

@@ -5,7 +5,20 @@ from discord import app_commands
 from discord.ext import commands
 import logging
 from typing import List
-import os  # <--- ADICIONE ESTA LINHA
+import os
+
+
+# Carrega os IDs dos cargos permitidos a usar comandos de moderação
+ALLOWED_MOD_ROLE_IDS = list(
+    map(int, os.getenv("ALLOWED_MOD_ROLE_IDS", "").split(",")))
+
+
+def check_allowed_roles():
+    async def predicate(interaction: discord.Interaction) -> bool:
+        if not interaction.user or not hasattr(interaction.user, "roles"):
+            return False
+        return any(role.id in ALLOWED_MOD_ROLE_IDS for role in interaction.user.roles)
+    return app_commands.check(predicate)
 
 
 class ModeracaoCog(commands.Cog):
@@ -17,10 +30,8 @@ class ModeracaoCog(commands.Cog):
     @app_commands.describe(quantidade="Número de mensagens a excluir (máximo 100).")
     @app_commands.checks.has_permissions(manage_messages=True)
     @app_commands.checks.bot_has_permissions(manage_messages=True)
+    @check_allowed_roles()  # <-- Aqui usamos a função externa que faz o check
     async def excluir(self, interaction: discord.Interaction, quantidade: app_commands.Range[int, 1, 100]):
-        """
-        Exclui um número especificado de mensagens no canal onde o comando foi invocado.
-        """
         await interaction.response.defer(ephemeral=True, thinking=True)
         channel = interaction.channel
 
@@ -32,9 +43,7 @@ class ModeracaoCog(commands.Cog):
             self.logger.info(
                 f"{interaction.user} ({interaction.user.id}) usou /excluir para apagar {num_deleted} mensagens em #{channel.name} ({channel.id})")
 
-            # Log no canal de logs do Discord
-            logs_channel_id_str = os.getenv(
-                "LOGS_DISCORD")  # Agora o 'os' está definido
+            logs_channel_id_str = os.getenv("LOGS_DISCORD")
             if logs_channel_id_str:
                 try:
                     logs_channel_id = int(logs_channel_id_str)
@@ -57,7 +66,7 @@ class ModeracaoCog(commands.Cog):
                     self.logger.error(
                         f"Erro ao enviar log de exclusão para Discord: {e_log}", exc_info=True)
 
-        except discord.Forbidden as e:
+        except discord.Forbidden:
             self.logger.warning(
                 f"Permissão 'Manage Messages' faltando para /excluir em #{channel.name} pelo bot {self.bot.user}")
             await interaction.followup.send("❌ **Erro:** Eu não tenho a permissão `Gerenciar Mensagens` neste canal.", ephemeral=True)
@@ -72,7 +81,6 @@ class ModeracaoCog(commands.Cog):
 
     @excluir.error
     async def excluir_error_handler(self, interaction: discord.Interaction, error: app_commands.AppCommandError):
-        """Trata erros específicos do comando /excluir."""
         if isinstance(error, app_commands.MissingPermissions):
             self.logger.warning(
                 f"Usuário {interaction.user} tentou usar /excluir sem permissão 'Manage Messages' em #{interaction.channel.name}")
@@ -84,6 +92,10 @@ class ModeracaoCog(commands.Cog):
                 await interaction.response.send_message("🛠️ **Aviso:** Eu não tenho a permissão `Gerenciar Mensagens` necessária.", ephemeral=True)
             else:
                 await interaction.followup.send("🛠️ **Aviso:** Eu não tenho a permissão `Gerenciar Mensagens` necessária.", ephemeral=True)
+        elif isinstance(error, app_commands.CheckFailure):
+            self.logger.warning(
+                f"Usuário {interaction.user} tentou usar /excluir sem cargo permitido.")
+            await interaction.response.send_message("🚫 Você não tem permissão para usar este comando (cargo não autorizado).", ephemeral=True)
         elif isinstance(error, app_commands.CommandInvokeError) and isinstance(error.original, discord.errors.NotFound) and "Unknown Interaction" in str(error.original):
             self.logger.warning(
                 f"Erro 'Unknown Interaction' ao responder /excluir para {interaction.user}.")

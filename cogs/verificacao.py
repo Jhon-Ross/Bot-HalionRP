@@ -1,18 +1,13 @@
-# Arquivo: cogs/verificacao.py
-
 import discord
-from discord import Interaction, app_commands  # Import Interaction
+from discord import Interaction, app_commands
 from discord.ext import commands
 from discord.ui import Button, View
 import os
 import logging
 from datetime import datetime
-from typing import Set  # Import Set
+from typing import Set
 
-# Configure o logger para este módulo
 logger = logging.getLogger(__name__)
-
-# --- FUNÇÕES DE VERIFICAÇÃO DE CARGO (Copiadas de moderacao.py) ---
 
 
 def get_allowed_mod_role_ids() -> Set[int]:
@@ -58,12 +53,9 @@ async def check_user_has_mod_role(interaction: Interaction) -> bool:
             f"Verificação de cargo bem-sucedida para {interaction.user} (comando: {interaction.command.name}).")
         return True
     else:
-        # Usamos warning aqui pois é uma falha de permissão esperada
         logger.warning(
-            f"Usuário {interaction.user} (ID: {interaction.user.id}) negado acesso ao comando '{interaction.command.name}'. Não possui cargos permitidos ({allowed_role_ids}).")
+            f"Usuário {interaction.user} (ID: {interaction.user.id}) negado acesso ao comando '{interaction.command.name}'. Não possui cargos permitidos.")
         return False
-
-# --- VIEW DE VERIFICAÇÃO (Permanece igual) ---
 
 
 class VerificarView(View):
@@ -76,7 +68,6 @@ class VerificarView(View):
         member = interaction.user
 
         try:
-            # Obter Cargo Turista
             turista_id_str = os.getenv("TURISTA_ID")
             if not turista_id_str:
                 await interaction.followup.send("❌ Sistema de verificação (cargo Turista) não configurado.", ephemeral=True)
@@ -95,7 +86,6 @@ class VerificarView(View):
                     f"Cargo Turista (ID: {turista_role_id}) não encontrado.")
                 return
 
-            # Obter Cargo Visitante
             visitante_id_str = os.getenv("VISITANTE_ID")
             if not visitante_id_str:
                 await interaction.followup.send("❌ Sistema de verificação (cargo Visitante) não configurado.", ephemeral=True)
@@ -114,7 +104,6 @@ class VerificarView(View):
                     f"Cargo Visitante (ID: {visitante_role_id}) não encontrado.")
                 return
 
-            # LÓGICA PRINCIPAL DA VERIFICAÇÃO
             if turista_role in member.roles:
                 await interaction.followup.send(f"⚠️ Você já possui o cargo {turista_role.mention}!", ephemeral=True)
                 return
@@ -124,7 +113,6 @@ class VerificarView(View):
                     f"Verificação (botão) bloqueada para {member.name}: não possui cargo Visitante.")
                 return
 
-            # Proceder com a troca
             logger.info(
                 f"Iniciando troca de cargos (botão) para {member.name}: Visitante -> Turista")
             removido_visitante = False
@@ -201,19 +189,11 @@ class VerificarView(View):
                 )
 
 
-# --- CLASSE DO COG ---
-
-
 class VerificacaoCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        # Logger já definido no nível do módulo
 
-    # --- COMANDO /verificar COM A VERIFICAÇÃO DE CARGO ---
     @app_commands.command(name="verificar", description="Envia o painel de verificação")
-    # REMOVA ou COMENTE a linha abaixo:
-    # @app_commands.checks.has_permissions(manage_messages=True)
-    # ADICIONE a linha abaixo:
     @app_commands.check(check_user_has_mod_role)
     async def verificar(self, interaction: Interaction):
         """Envia o painel de verificação com botão"""
@@ -226,13 +206,11 @@ class VerificacaoCog(commands.Cog):
             embed.set_footer(
                 text="Apenas para usuários com o cargo 'Visitante'.")
 
-            # Usa a classe VerificarView diretamente aqui
             await interaction.response.send_message(embed=embed, view=VerificarView())
             logger.info(
                 f"Painel de verificação enviado por {interaction.user} no canal {interaction.channel.name}")
         except Exception as e:
             logger.error(f"Erro no comando /verificar: {e}", exc_info=True)
-            # Tenta responder ao erro se possível
             if not interaction.response.is_done():
                 await interaction.response.send_message("❌ Ocorreu um erro ao criar o painel.", ephemeral=True)
             else:
@@ -242,15 +220,12 @@ class VerificacaoCog(commands.Cog):
                     logger.warning(
                         "Não foi possível enviar erro do /verificar (interação não encontrada).")
 
-    # --- LISTENER on_member_join (Permanece igual) ---
-
     @commands.Cog.listener()
     async def on_member_join(self, member):
         """Envia mensagem de boas-vindas personalizada"""
         if member.bot:
             return
         try:
-            # ... (Código do on_member_join como estava na versão anterior) ...
             channel_id_str = os.getenv("BOAS_VINDAS_ID")
             if not channel_id_str:
                 logger.warning("BOAS_VINDAS_ID não definido no .env")
@@ -315,45 +290,57 @@ class VerificacaoCog(commands.Cog):
             logger.error(
                 f"Erro em on_member_join (Boas Vindas): {e}", exc_info=True)
 
-    # --- HANDLER DE ERRO DO COG ---
     async def cog_app_command_error(self, interaction: Interaction, error: app_commands.AppCommandError):
         """Trata erros para todos os comandos de aplicativo neste Cog."""
-        # Erro específico da nossa verificação de cargo
-        # Adicionamos uma verificação para garantir que o erro veio do check correto
-        if isinstance(error, app_commands.CheckFailure) and hasattr(error, 'check') and error.check == check_user_has_mod_role:
-            logger.warning(
-                f"Usuário {interaction.user} falhou na verificação de cargo para o comando '{interaction.command.name}'.")
-            # Verifica se já respondeu (ex: defer falhou por permissão)
-            if not interaction.response.is_done():
-                await interaction.response.send_message("🚫 Você não possui o cargo necessário para usar este comando.", ephemeral=True)
-            # Não usar followup aqui, pois a resposta inicial pode ter falhado
+        original_error = getattr(
+            error, 'original', error)
+
+        if isinstance(error, app_commands.CheckFailure):
+            command_name = interaction.command.name if interaction.command else "desconhecido"
+
+            logger.debug(
+                f"Handler pegou CheckFailure para o comando '{command_name}' por {interaction.user}.")
+
+            custom_error_message = "🚫 Você não tem permissão para usar este comando (cargo não autorizado)."
+            try:
+                if not interaction.response.is_done():
+                    await interaction.response.send_message(custom_error_message, ephemeral=True)
+                else:
+                    await interaction.followup.send(custom_error_message, ephemeral=True)
+            except discord.NotFound:
+                logger.warning(
+                    f"Não foi possível enviar mensagem de erro de permissão para {interaction.user} (interação não encontrada).")
+            except Exception as e_resp:
+                logger.error(
+                    f"Erro ao enviar mensagem de erro de permissão para {interaction.user}: {e_resp}", exc_info=True)
+
             return
 
-        # Trata outros erros genéricos (opcional, pode deixar para um handler global se tiver)
         else:
+            command_name = interaction.command.name if interaction.command else "comando desconhecido"
             logger.error(
-                f"Erro não tratado para '{interaction.command.name}' no VerificacaoCog por {interaction.user}: {error}", exc_info=True)
-            error_message = "❌ Ocorreu um erro inesperado ao processar este comando."
-            if not interaction.response.is_done():
-                await interaction.response.send_message(error_message, ephemeral=True)
-            else:
-                try:
-                    # Tenta followup se já houve defer bem-sucedido antes do erro
-                    await interaction.followup.send(error_message, ephemeral=True)
-                except discord.NotFound:
-                    pass  # Ignora se a interação original sumiu
+                f"Erro inesperado ao executar '{command_name}' por {interaction.user} (ID: {interaction.user.id}): {error}",
+                exc_info=True
+            )
 
-# --- FUNÇÃO SETUP (Registra a View persistente aqui também) ---
+            generic_error_message = "❌ Ocorreu um erro inesperado ao processar este comando."
+            try:
+                if not interaction.response.is_done():
+                    await interaction.response.send_message(generic_error_message, ephemeral=True)
+                else:
+                    await interaction.followup.send(generic_error_message, ephemeral=True)
+            except discord.NotFound:
+                logger.warning(
+                    f"Não foi possível enviar mensagem de erro genérico para {interaction.user} (interação não encontrada).")
+            except Exception as e_resp:
+                logger.error(
+                    f"Erro ao enviar mensagem de erro genérico para {interaction.user}: {e_resp}", exc_info=True)
 
 
 async def setup(bot):
     cog = VerificacaoCog(bot)
     await bot.add_cog(cog)
-    # É crucial registrar a View persistente aqui ou no setup_hook do bot
-    # Vamos garantir que ela só seja adicionada uma vez
     view_instance = VerificarView()
-    # Verifica se uma view com o mesmo custom_id já foi adicionada
-    # (Uma abordagem simples, pode ser aprimorada se tiver muitas views)
     found = False
     for existing_view in bot.persistent_views:
         if isinstance(existing_view, VerificarView):
