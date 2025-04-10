@@ -4699,3 +4699,570 @@ AttributeError: 'NoneType' object has no attribute 'sequence'
 2025-04-09 20:46:17 | INFO | root | ✅ Cargo 'Visitante' atribuído a peraltappt (1138609757641515068)
 2025-04-09 22:32:18 | INFO | discord.gateway | Shard ID None has successfully RESUMED session 6b53479d4f2b0f89935623f3c1900a12.
 2025-04-09 23:05:16 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #logs-discord (1168518830377685002)
+2025-04-10 08:24:05 | INFO | root | 
+⚡ ==================================================
+2025-04-10 08:24:05 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 08:24:05 | INFO | root | ⚡ ==================================================
+2025-04-10 08:24:05 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 08:24:05 | INFO | discord.client | logging in using static token
+2025-04-10 08:24:06 | INFO | root | 
+📦 ==================================================
+2025-04-10 08:24:06 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 08:24:06 | INFO | root | 📦 ==================================================
+2025-04-10 08:24:06 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 08:24:06 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 08:24:06 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 08:24:06 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 08:24:06 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 08:24:06 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-10 08:24:06 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-10 08:24:06 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 08:24:06 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-10 08:24:07 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: e16cab1372df78c8a9d6467dd3144385).
+2025-04-10 08:24:09 | INFO | root | 
+🤖 ==================================================
+2025-04-10 08:24:09 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 08:24:09 | INFO | root | 🤖 ==================================================
+2025-04-10 08:24:09 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 08:24:09 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 08:24:09 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 08:24:09 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 08:24:09
+2025-04-10 08:24:09 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 08:24:09 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 08:24:09 | INFO | root | 
+🔄 ==================================================
+2025-04-10 08:24:09 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 08:24:09 | INFO | root | 🔄 ==================================================
+2025-04-10 08:25:06 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-10 08:25:06 | INFO | root | 
+🚀 ==================================================
+2025-04-10 08:25:06 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 08:25:06 | INFO | root | 🚀 ==================================================
+2025-04-10 08:57:02 | INFO | root | 
+⚡ ==================================================
+2025-04-10 08:57:02 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 08:57:02 | INFO | root | ⚡ ==================================================
+2025-04-10 08:57:02 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 08:57:02 | INFO | discord.client | logging in using static token
+2025-04-10 08:57:03 | INFO | root | 
+📦 ==================================================
+2025-04-10 08:57:03 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 08:57:03 | INFO | root | 📦 ==================================================
+2025-04-10 08:57:03 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 08:57:03 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 08:57:03 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 08:57:03 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 08:57:03 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 08:57:03 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-10 08:57:03 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-10 08:57:03 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 08:57:03 | INFO | root | ℹ️ Total carregado: 3 | Ignorados: 0
+2025-04-10 08:57:03 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 7a0c4f54afd11217c1d4c2e8cf8622f6).
+2025-04-10 08:57:05 | INFO | root | 
+🤖 ==================================================
+2025-04-10 08:57:05 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 08:57:05 | INFO | root | 🤖 ==================================================
+2025-04-10 08:57:05 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 08:57:05 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 08:57:05 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 08:57:05 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 08:57:05
+2025-04-10 08:57:05 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 08:57:06 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 08:57:06 | INFO | root | 
+🔄 ==================================================
+2025-04-10 08:57:06 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 08:57:06 | INFO | root | 🔄 ==================================================
+2025-04-10 08:58:03 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 3
+2025-04-10 08:58:03 | INFO | root | 
+🚀 ==================================================
+2025-04-10 08:58:03 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 08:58:03 | INFO | root | 🚀 ==================================================
+2025-04-10 08:58:34 | INFO | root | ℹ️ Membro jhonross_79910 (1359218835919605914) saiu.
+2025-04-10 09:01:10 | INFO | root | 🔄 Tentando adicionar cargo 'Visitante' para jhonross_79910...
+2025-04-10 09:01:10 | INFO | cogs.verificacao | Mensagem de boas-vindas enviada para jhonross_79910 (1359218835919605914)
+2025-04-10 09:01:12 | INFO | root | ✅ Cargo 'Visitante' atribuído a jhonross_79910 (1359218835919605914)
+2025-04-10 09:01:47 | INFO | cogs.verificacao | Iniciando troca de cargos (botão) para jhonross_79910: Visitante -> Turista
+2025-04-10 09:01:47 | INFO | cogs.verificacao | Cargo 'Turista' adicionado a jhonross_79910
+2025-04-10 09:01:48 | INFO | cogs.verificacao | Cargo 'Visitante' removido de jhonross_79910
+2025-04-10 09:14:38 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:14:38 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:14:38 | INFO | root | ⚡ ==================================================
+2025-04-10 09:14:38 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:14:38 | INFO | discord.client | logging in using static token
+2025-04-10 09:14:39 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:14:39 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:14:39 | INFO | root | 📦 ==================================================
+2025-04-10 09:14:39 | INFO | cogs.communication | Diretório 'data' criado.
+2025-04-10 09:14:39 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem de comunicado carregado: None
+2025-04-10 09:14:39 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:14:39 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:14:39 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:14:39 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:14:39 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:14:39 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:14:39 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:14:39 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-10 09:14:39 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-10 09:14:39 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:14:39 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:14:40 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: ae8a73e8499af958e854e0e378ba9b59).
+2025-04-10 09:14:42 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:14:42 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:14:42 | INFO | root | 🤖 ==================================================
+2025-04-10 09:14:42 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:14:42 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:14:42 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:14:42 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:14:42
+2025-04-10 09:14:42 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:14:42 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:14:42 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:14:42 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:14:42 | INFO | root | 🔄 ==================================================
+2025-04-10 09:15:00 | INFO | cogs.communication | ID da mensagem 1359864244161745059 salvo em data/comunicados_message_id.txt.
+2025-04-10 09:15:00 | INFO | cogs.communication | Nova mensagem de comunicado 1359864244161745059 enviada por jhonross.
+2025-04-10 09:15:39 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:15:39 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:15:39 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:15:39 | INFO | root | 🚀 ==================================================
+2025-04-10 09:17:41 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:17:41 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:17:41 | INFO | root | ⚡ ==================================================
+2025-04-10 09:17:41 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:17:41 | INFO | discord.client | logging in using static token
+2025-04-10 09:17:42 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:17:42 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:17:42 | INFO | root | 📦 ==================================================
+2025-04-10 09:17:42 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359864244161745059. Cargos permitidos: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:17:42 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:17:42 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:17:42 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:17:42 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:17:42 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:17:42 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:17:42 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:17:42 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-10 09:17:42 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-10 09:17:42 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:17:42 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:17:43 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 93eb0b450632f06b6f12dea695385cca).
+2025-04-10 09:17:45 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:17:45 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:17:45 | INFO | root | 🤖 ==================================================
+2025-04-10 09:17:45 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:17:45 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:17:45 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:17:45 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:17:45
+2025-04-10 09:17:45 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:17:45 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:17:45 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:17:45 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:17:45 | INFO | root | 🔄 ==================================================
+2025-04-10 09:17:59 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #🔔・𝗖𝗢𝗠𝗨𝗡𝗜𝗖𝗔𝗗𝗢𝗦 (1166009020654567486)
+2025-04-10 09:18:12 | ERROR | asyncio | Task exception was never retrieved
+future: <Task finished name='CommandTree-invoker' coro=<CommandTree._from_interaction.<locals>.wrapper() done, defined at C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py:1149> exception=TypeError("CommunicationCog.has_allowed_role() missing 1 required positional argument: 'interaction'")>
+Traceback (most recent call last):
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1151, in wrapper
+    await self._call(interaction)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 879, in _invoke_with_namespace
+    if not await self._check_can_run(interaction):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in _check_can_run
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\utils.py", line 725, in async_all
+    for elem in gen:
+                ^^^
+  File "C:\Users\Jhon Ross\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\app_commands\commands.py", line 1017, in <genexpr>
+    return await async_all(f(interaction) for f in predicates)  # type: ignore
+                           ~^^^^^^^^^^^^^
+TypeError: CommunicationCog.has_allowed_role() missing 1 required positional argument: 'interaction'
+2025-04-10 09:18:42 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:18:42 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:18:42 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:18:42 | INFO | root | 🚀 ==================================================
+2025-04-10 09:20:04 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:20:04 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:20:04 | INFO | root | ⚡ ==================================================
+2025-04-10 09:20:04 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:20:04 | INFO | discord.client | logging in using static token
+2025-04-10 09:20:05 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:20:05 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:20:05 | INFO | root | 📦 ==================================================
+2025-04-10 09:20:05 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:20:05 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359864244161745059.
+2025-04-10 09:20:05 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:20:05 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:20:05 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:20:05 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:20:05 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:20:05 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:20:05 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:20:05 | INFO | cogs.whitelist | Comandos do WhitelistCog sincronizados para a guilda 1165820860632928286
+2025-04-10 09:20:05 | INFO | cogs.whitelist | Cog Whitelist carregado.
+2025-04-10 09:20:05 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:20:05 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:20:06 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: c077f67008dd11a1f4fd74fb21581ae0).
+2025-04-10 09:20:08 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:20:08 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:20:08 | INFO | root | 🤖 ==================================================
+2025-04-10 09:20:08 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:20:08 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:20:08 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:20:08 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:20:08
+2025-04-10 09:20:08 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:20:10 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:20:10 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:20:10 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:20:10 | INFO | root | 🔄 ==================================================
+2025-04-10 09:20:21 | WARNING | cogs.communication | Mensagem de comunicado 1359864244161745059 não encontrada. Enviando nova.
+2025-04-10 09:20:21 | INFO | cogs.communication | ID da mensagem removido de data/comunicados_message_id.txt.
+2025-04-10 09:20:21 | INFO | cogs.communication | ID da mensagem 1359865592638603576 salvo em data/comunicados_message_id.txt.
+2025-04-10 09:20:21 | INFO | cogs.communication | Nova mensagem de comunicado 1359865592638603576 enviada por jhonross.
+2025-04-10 09:20:52 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #🔔・𝗖𝗢𝗠𝗨𝗡𝗜𝗖𝗔𝗗𝗢𝗦 (1166009020654567486)
+2025-04-10 09:21:05 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:21:05 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:21:05 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:21:05 | INFO | root | 🚀 ==================================================
+2025-04-10 09:21:14 | WARNING | root | Usuário halionrp (ID: 1359218835919605914) tentou usar /comunicados sem um cargo permitido. Cargos: {1176021146454462464, 1169751010089128006, 1165820860632928286}
+2025-04-10 09:26:09 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:26:09 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:26:09 | INFO | root | ⚡ ==================================================
+2025-04-10 09:26:09 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:26:09 | INFO | discord.client | logging in using static token
+2025-04-10 09:26:09 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:26:09 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:26:09 | INFO | root | 📦 ==================================================
+2025-04-10 09:26:09 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:26:09 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359865592638603576.
+2025-04-10 09:26:09 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:26:09 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:26:09 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:26:09 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:26:09 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:26:09 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:26:09 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:26:09 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 09:26:09 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 09:26:09 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 09:26:09 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 09:26:09 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:26:09 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:26:10 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 704f1dad8b52d3ad3f82e0040a580466).
+2025-04-10 09:26:12 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:26:12 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:26:12 | INFO | root | 🤖 ==================================================
+2025-04-10 09:26:12 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:26:12 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:26:12 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:26:12 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:26:12
+2025-04-10 09:26:12 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:26:12 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:26:12 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:26:12 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:26:12 | INFO | root | 🔄 ==================================================
+2025-04-10 09:26:12 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:26:12 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:26:12 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:26:12 | INFO | root | 🚀 ==================================================
+2025-04-10 09:26:24 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-10 09:26:30 | INFO | cogs.whitelist | Comando /whitelist executado com sucesso por jhonross no canal 📖・whitelist
+2025-04-10 09:26:44 | WARNING | cogs.whitelist | Usuário jhonross tentou usar /whitelist no canal errado (✅・𝗔𝗣𝗥𝗢𝗩𝗔𝗗𝗢𝗦/1165827121055281252). Canal correto: 1171528665599848520
+2025-04-10 09:31:21 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:31:21 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:31:21 | INFO | root | ⚡ ==================================================
+2025-04-10 09:31:21 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:31:21 | INFO | discord.client | logging in using static token
+2025-04-10 09:31:22 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:31:22 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:31:22 | INFO | root | 📦 ==================================================
+2025-04-10 09:31:22 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:31:22 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359865592638603576.
+2025-04-10 09:31:22 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:31:22 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:31:22 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:31:22 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:31:22 | INFO | root | ID do canal de Verificação carregado: 1356839873595707492
+2025-04-10 09:31:22 | INFO | cogs.verificacao | Verificacao Cog iniciado. Canal alvo ID: 1356839873595707492
+2025-04-10 09:31:22 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:31:22 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:31:22 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:31:22 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 09:31:22 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 09:31:22 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 09:31:22 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 09:31:22 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:31:22 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:31:22 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 15685029a4c61e38c7bfa0441bb789e6).
+2025-04-10 09:31:24 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:31:24 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:31:24 | INFO | root | 🤖 ==================================================
+2025-04-10 09:31:24 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:31:24 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:31:24 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:31:24 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:31:24
+2025-04-10 09:31:24 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:31:24 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:31:24 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:31:24 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:31:24 | INFO | root | 🔄 ==================================================
+2025-04-10 09:31:24 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:31:24 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:31:24 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:31:24 | INFO | root | 🚀 ==================================================
+2025-04-10 09:31:39 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-10 09:31:48 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross no canal ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-10 09:32:00 | WARNING | cogs.verificacao | Usuário jhonross tentou usar /verificar no canal errado (💠・𝗖𝗢𝗡𝗘𝗖𝗧𝗔𝗥/1165823481888378931). Canal correto: 1356839873595707492
+2025-04-10 09:47:51 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:47:51 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:47:51 | INFO | root | ⚡ ==================================================
+2025-04-10 09:47:51 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:47:51 | INFO | discord.client | logging in using static token
+2025-04-10 09:47:51 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:47:51 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:47:51 | INFO | root | 📦 ==================================================
+2025-04-10 09:47:51 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:47:51 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359865592638603576.
+2025-04-10 09:47:51 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:47:51 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:47:51 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:47:51 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:47:51 | INFO | root | ID do canal de Verificação carregado: 1356839873595707492
+2025-04-10 09:47:51 | INFO | cogs.verificacao | Verificacao Cog iniciado. Canal alvo ID: 1356839873595707492
+2025-04-10 09:47:51 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:47:51 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:47:51 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:47:51 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 09:47:51 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 09:47:51 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 09:47:51 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 09:47:51 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:47:51 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:47:52 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: af37ac20d44dbaa503635e163cd003d7).
+2025-04-10 09:47:54 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:47:54 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:47:54 | INFO | root | 🤖 ==================================================
+2025-04-10 09:47:54 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:47:54 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:47:54 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:47:54 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:47:54
+2025-04-10 09:47:54 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:47:54 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:47:54 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:47:54 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:47:54 | INFO | root | 🔄 ==================================================
+2025-04-10 09:47:55 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:47:55 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:47:55 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:47:55 | INFO | root | 🚀 ==================================================
+2025-04-10 09:48:04 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-10 09:48:09 | INFO | cogs.whitelist | Comando /whitelist executado com sucesso por jhonross no canal 📖・whitelist
+2025-04-10 09:48:14 | WARNING | cogs.whitelist | Usuário jhonross tentou usar /whitelist no canal errado (❌・𝗥𝗘𝗣𝗥𝗢𝗩𝗔𝗗𝗢𝗦/1165827143905845308). Canal correto: 1171528665599848520
+2025-04-10 09:48:26 | WARNING | cogs.verificacao | Usuário jhonross usou /verificar no canal errado (❌・𝗥𝗘𝗣𝗥𝗢𝗩𝗔𝗗𝗢𝗦). Correto: 1356839873595707492
+2025-04-10 09:48:36 | WARNING | cogs.communication | Mensagem de comunicado 1359865592638603576 não encontrada. Enviando nova.
+2025-04-10 09:48:36 | INFO | cogs.communication | ID da mensagem removido de data/comunicados_message_id.txt.
+2025-04-10 09:48:37 | INFO | cogs.communication | ID da mensagem 1359872704081297419 salvo em data/comunicados_message_id.txt.
+2025-04-10 09:48:37 | INFO | cogs.communication | Nova mensagem de comunicado 1359872704081297419 enviada por jhonross.
+2025-04-10 09:48:47 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-10 09:48:52 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross em ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-10 09:51:18 | INFO | root | 
+⚡ ==================================================
+2025-04-10 09:51:18 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 09:51:18 | INFO | root | ⚡ ==================================================
+2025-04-10 09:51:18 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 09:51:18 | INFO | discord.client | logging in using static token
+2025-04-10 09:51:19 | INFO | root | 
+📦 ==================================================
+2025-04-10 09:51:19 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 09:51:19 | INFO | root | 📦 ==================================================
+2025-04-10 09:51:19 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 09:51:19 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359872704081297419.
+2025-04-10 09:51:19 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 09:51:19 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 09:51:19 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 09:51:19 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 09:51:19 | INFO | root | ID do canal de Verificação carregado: 1356839873595707492
+2025-04-10 09:51:19 | INFO | cogs.verificacao | Verificacao Cog iniciado. Canal alvo ID: 1356839873595707492
+2025-04-10 09:51:19 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 09:51:19 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 09:51:19 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 09:51:19 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 09:51:19 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 09:51:19 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 09:51:19 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 09:51:19 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 09:51:19 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 09:51:19 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 9bcb8cc03a7a90a1b99da2fa849c581a).
+2025-04-10 09:51:21 | INFO | root | 
+🤖 ==================================================
+2025-04-10 09:51:21 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 09:51:21 | INFO | root | 🤖 ==================================================
+2025-04-10 09:51:21 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 09:51:21 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 09:51:21 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 09:51:21 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 09:51:21
+2025-04-10 09:51:21 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 09:51:22 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 09:51:22 | INFO | root | 
+🔄 ==================================================
+2025-04-10 09:51:22 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 09:51:22 | INFO | root | 🔄 ==================================================
+2025-04-10 09:51:22 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 09:51:22 | INFO | root | 
+🚀 ==================================================
+2025-04-10 09:51:22 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 09:51:22 | INFO | root | 🚀 ==================================================
+2025-04-10 09:51:31 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿 (1356839873595707492)
+2025-04-10 09:51:37 | INFO | cogs.verificacao | Painel de verificação enviado por jhonross em ✅・𝗩𝗲𝗿𝗶𝗳𝗶𝗰𝗮𝗿
+2025-04-10 09:51:44 | WARNING | cogs.verificacao | Usuário jhonross usou /verificar no canal errado (💠・𝗖𝗢𝗡𝗘𝗖𝗧𝗔𝗥). Correto: 1356839873595707492
+2025-04-10 09:51:49 | INFO | cogs.verificacao | Verificação (botão) ignorada para jhonross: não possui cargo Visitante.
+2025-04-10 09:52:19 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 1 mensagens em #📖・whitelist (1171528665599848520)
+2025-04-10 09:52:24 | INFO | cogs.whitelist | Comando /whitelist executado com sucesso por jhonross no canal 📖・whitelist
+2025-04-10 09:52:27 | INFO | views.whitelist_view | Atribuindo cargo 'Análise' para halionrp (ID: 1359218835919605914).
+2025-04-10 09:52:27 | INFO | views.whitelist_view | Cargo 'Análise' atribuído com sucesso para halionrp.
+2025-04-10 09:52:27 | INFO | views.whitelist_view | Tentando criar canal 'wl-halion-rp-5914' para halionrp (ID: 1359218835919605914)...
+2025-04-10 09:52:28 | INFO | views.whitelist_view | Canal 'wl-halion-rp-5914' criado com sucesso para halionrp.
+2025-04-10 09:52:28 | INFO | handlers.questionnaire | Iniciando processo de questionário para: halionrp (ID: 1359218835919605914) no canal wl-halion-rp-5914
+2025-04-10 09:53:20 | INFO | handlers.questionnaire | Questionário concluído por halionrp. Atribuindo ID de Tentativa: 1
+2025-04-10 09:53:20 | INFO | handlers.questionnaire | Respostas da tentativa 1 de halionrp salvas em whitelist_respostas.csv com timestamp local.
+2025-04-10 09:53:20 | WARNING | handlers.questionnaire | Canal da staff 'respostas-whitelist' não encontrado para a tentativa 1.
+2025-04-10 09:53:20 | INFO | handlers.questionnaire | Finalizando questionário para halionrp. Tentando deletar canal wl-halion-rp-5914...
+2025-04-10 09:53:23 | INFO | handlers.questionnaire | Canal wl-halion-rp-5914 deletado com sucesso.
+2025-04-10 09:56:02 | INFO | root | ℹ️ Membro halionrp (1359218835919605914) saiu.
+2025-04-10 09:56:59 | INFO | cogs.verificacao | Mensagem de boas-vindas enviada para halionrp
+2025-04-10 09:57:00 | INFO | root | 🔄 Tentando adicionar cargo 'Visitante' para halionrp...
+2025-04-10 09:57:01 | INFO | root | ✅ Cargo 'Visitante' atribuído a halionrp (1359218835919605914)
+2025-04-10 10:14:16 | INFO | root | 
+⚡ ==================================================
+2025-04-10 10:14:16 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 10:14:16 | INFO | root | ⚡ ==================================================
+2025-04-10 10:14:16 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 10:14:16 | INFO | discord.client | logging in using static token
+2025-04-10 10:14:16 | INFO | root | 
+📦 ==================================================
+2025-04-10 10:14:16 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 10:14:16 | INFO | root | 📦 ==================================================
+2025-04-10 10:14:16 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 10:14:16 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359872704081297419.
+2025-04-10 10:14:16 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 10:14:16 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 10:14:16 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 10:14:16 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 10:14:16 | INFO | root | ID do canal de Verificação carregado: 1356839873595707492
+2025-04-10 10:14:16 | INFO | cogs.verificacao | Verificacao Cog iniciado. Canal alvo ID: 1356839873595707492
+2025-04-10 10:14:16 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 10:14:16 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 10:14:16 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 10:14:16 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 10:14:16 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 10:14:16 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 10:14:16 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 10:14:16 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 10:14:16 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 10:14:17 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 5888a1b6e75b737b0f3f9f043b2cfe2e).
+2025-04-10 10:14:19 | INFO | root | 
+🤖 ==================================================
+2025-04-10 10:14:19 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 10:14:19 | INFO | root | 🤖 ==================================================
+2025-04-10 10:14:19 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 10:14:19 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 10:14:19 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 10:14:19 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 10:14:19
+2025-04-10 10:14:19 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 10:14:19 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 10:14:19 | INFO | root | 
+🔄 ==================================================
+2025-04-10 10:14:19 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 10:14:19 | INFO | root | 🔄 ==================================================
+2025-04-10 10:14:19 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 10:14:19 | INFO | root | 
+🚀 ==================================================
+2025-04-10 10:14:19 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 10:14:19 | INFO | root | 🚀 ==================================================
+2025-04-10 10:14:37 | INFO | root | ℹ️ Membro halionrp (1359218835919605914) saiu.
+2025-04-10 10:14:46 | INFO | cogs.verificacao | Mensagem de boas-vindas enviada para halionrp
+2025-04-10 10:14:46 | INFO | root | 🔄 Tentando adicionar cargo 'Visitante' para halionrp...
+2025-04-10 10:14:47 | INFO | root | ✅ Cargo 'Visitante' atribuído a halionrp (1359218835919605914)
+2025-04-10 10:17:45 | INFO | root | 
+⚡ ==================================================
+2025-04-10 10:17:45 | INFO | root | ⚡             INICIANDO BOT GENESIS RP            
+2025-04-10 10:17:45 | INFO | root | ⚡ ==================================================
+2025-04-10 10:17:45 | INFO | root | 🔄 Iniciando conexão com o Discord...
+2025-04-10 10:17:45 | INFO | discord.client | logging in using static token
+2025-04-10 10:17:45 | INFO | root | 
+📦 ==================================================
+2025-04-10 10:17:45 | INFO | root | 📦               CARREGANDO EXTENSÕES              
+2025-04-10 10:17:45 | INFO | root | 📦 ==================================================
+2025-04-10 10:17:45 | INFO | root | Carregados IDs de cargos permitidos para /comunicados: {1167435486688710696, 1167434693864599609, 1167433701282562058, 1167435200368746526}
+2025-04-10 10:17:45 | INFO | cogs.communication | Cog Communication carregado. ID da mensagem: 1359872704081297419.
+2025-04-10 10:17:45 | INFO | root | Cog Communication adicionado com sucesso.
+2025-04-10 10:17:45 | INFO | root | ✅ Carregado: cogs.communication
+2025-04-10 10:17:45 | INFO | root | Cog ModeracaoCog carregado com sucesso.
+2025-04-10 10:17:45 | INFO | root | ✅ Carregado: cogs.moderacao
+2025-04-10 10:17:45 | INFO | root | ID do canal de Verificação carregado: 1356839873595707492
+2025-04-10 10:17:45 | INFO | cogs.verificacao | Verificacao Cog iniciado. Canal alvo ID: 1356839873595707492
+2025-04-10 10:17:45 | INFO | cogs.verificacao | View VerificarView registrada para persistência.
+2025-04-10 10:17:45 | INFO | cogs.verificacao | Cog VerificacaoCog carregado com sucesso.
+2025-04-10 10:17:45 | INFO | root | ✅ Carregado: cogs.verificacao
+2025-04-10 10:17:45 | INFO | root | ID do canal de Whitelist carregado: 1171528665599848520
+2025-04-10 10:17:45 | INFO | root | Função check_user_has_mod_role importada de cogs.verificacao.
+2025-04-10 10:17:45 | INFO | cogs.whitelist | Whitelist Cog iniciado. Canal alvo ID: 1171528665599848520
+2025-04-10 10:17:45 | INFO | cogs.whitelist | Cog Whitelist carregado com sucesso.
+2025-04-10 10:17:45 | INFO | root | ✅ Carregado: cogs.whitelist
+2025-04-10 10:17:45 | INFO | root | ℹ️ Total carregado: 4 | Ignorados: 0
+2025-04-10 10:17:46 | INFO | discord.gateway | Shard ID None has connected to Gateway (Session ID: 79331199c300bedf6d0acee13d9ae21d).
+2025-04-10 10:17:48 | INFO | root | 
+🤖 ==================================================
+2025-04-10 10:17:48 | INFO | root | 🤖              BOT HalionBOT INICIADO             
+2025-04-10 10:17:48 | INFO | root | 🤖 ==================================================
+2025-04-10 10:17:48 | INFO | root | ✅ ID: 1169666599356223538
+2025-04-10 10:17:48 | INFO | root | ✅ Discord.py v2.5.2
+2025-04-10 10:17:48 | INFO | root | ✅ Conectado a 1 servidor(es)
+2025-04-10 10:17:48 | INFO | root | ✅ Horário (Log Interno): 10/04/2025 10:17:48
+2025-04-10 10:17:48 | INFO | root | ✅ Membros em Halion RP: 19
+2025-04-10 10:17:48 | INFO | root | ✅ Mensagem de inicialização enviada para o canal de logs
+2025-04-10 10:17:48 | INFO | root | 
+🔄 ==================================================
+2025-04-10 10:17:48 | INFO | root | 🔄           SINCRONIZANDO COMANDOS SLASH          
+2025-04-10 10:17:48 | INFO | root | 🔄 ==================================================
+2025-04-10 10:17:48 | INFO | root | ✅ Comandos sincronizados para a Guild 1165820860632928286: 4
+2025-04-10 10:17:48 | INFO | root | 
+🚀 ==================================================
+2025-04-10 10:17:48 | INFO | root | 🚀               BOT PRONTO PARA USO               
+2025-04-10 10:17:48 | INFO | root | 🚀 ==================================================
+2025-04-10 10:18:11 | INFO | cogs.moderacao | jhonross (324634477500432397) usou /excluir para apagar 3 mensagens em #🥳・𝗕𝗲𝗺-𝗩𝗶𝗻𝗱𝗼𝘀 (1171080740084133888)
+2025-04-10 10:18:27 | INFO | root | ℹ️ Membro halionrp (1359218835919605914) saiu.
+2025-04-10 10:18:34 | INFO | root | 🔄 Tentando adicionar cargo 'Visitante' para halionrp...
+2025-04-10 10:18:34 | INFO | cogs.verificacao | Mensagem de boas-vindas enviada para halionrp
+2025-04-10 10:18:35 | INFO | root | ✅ Cargo 'Visitante' atribuído a halionrp (1359218835919605914)

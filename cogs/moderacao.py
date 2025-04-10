@@ -1,5 +1,3 @@
-# Arquivo: cogs/moderacao.py
-
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -7,30 +5,36 @@ import logging
 from typing import List
 import os
 
-
-# Carrega os IDs dos cargos permitidos a usar comandos de moderação
+# --- Início: Carregamento de Configurações ---
 ALLOWED_MOD_ROLE_IDS = list(
     map(int, os.getenv("ALLOWED_MOD_ROLE_IDS", "").split(",")))
+# --- Fim: Carregamento de Configurações ---
 
 
+# --- Início: Função de Verificação de Cargo (check_allowed_roles) ---
 def check_allowed_roles():
     async def predicate(interaction: discord.Interaction) -> bool:
         if not interaction.user or not hasattr(interaction.user, "roles"):
             return False
         return any(role.id in ALLOWED_MOD_ROLE_IDS for role in interaction.user.roles)
     return app_commands.check(predicate)
+# --- Fim: Função de Verificação de Cargo ---
 
 
+# --- Início: Definição da Classe Cog 'ModeracaoCog' ---
 class ModeracaoCog(commands.Cog):
+    # --- Início: Método Construtor __init__ ---
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.logger = logging.getLogger(__name__)
+    # --- Fim: Método Construtor __init__ ---
 
+    # --- Início: Comando de Aplicação /excluir ---
     @app_commands.command(name="excluir", description="Exclui uma quantidade específica de mensagens do canal atual (1-100).")
     @app_commands.describe(quantidade="Número de mensagens a excluir (máximo 100).")
     @app_commands.checks.has_permissions(manage_messages=True)
     @app_commands.checks.bot_has_permissions(manage_messages=True)
-    @check_allowed_roles()  # <-- Aqui usamos a função externa que faz o check
+    @check_allowed_roles()
     async def excluir(self, interaction: discord.Interaction, quantidade: app_commands.Range[int, 1, 100]):
         await interaction.response.defer(ephemeral=True, thinking=True)
         channel = interaction.channel
@@ -43,6 +47,7 @@ class ModeracaoCog(commands.Cog):
             self.logger.info(
                 f"{interaction.user} ({interaction.user.id}) usou /excluir para apagar {num_deleted} mensagens em #{channel.name} ({channel.id})")
 
+            # Bloco para envio de log
             logs_channel_id_str = os.getenv("LOGS_DISCORD")
             if logs_channel_id_str:
                 try:
@@ -65,6 +70,7 @@ class ModeracaoCog(commands.Cog):
                 except Exception as e_log:
                     self.logger.error(
                         f"Erro ao enviar log de exclusão para Discord: {e_log}", exc_info=True)
+            # Fim do bloco para envio de log
 
         except discord.Forbidden:
             self.logger.warning(
@@ -78,7 +84,9 @@ class ModeracaoCog(commands.Cog):
             self.logger.error(
                 f"Erro inesperado durante /excluir em #{channel.name}: {e}", exc_info=True)
             await interaction.followup.send("❌ **Erro:** Um erro inesperado aconteceu.", ephemeral=True)
+    # --- Fim: Comando de Aplicação /excluir ---
 
+    # --- Início: Tratador de Erros para /excluir (excluir_error_handler) ---
     @excluir.error
     async def excluir_error_handler(self, interaction: discord.Interaction, error: app_commands.AppCommandError):
         if isinstance(error, app_commands.MissingPermissions):
@@ -109,8 +117,15 @@ class ModeracaoCog(commands.Cog):
                     await interaction.followup.send("❌ Ocorreu um erro inesperado.", ephemeral=True)
                 except discord.errors.NotFound:
                     pass
+    # --- Fim: Tratador de Erros para /excluir ---
+
+# --- Fim: Definição da Classe Cog 'ModeracaoCog' ---
 
 
+# --- Início: Função setup (Carregamento do Cog) ---
 async def setup(bot: commands.Bot):
     await bot.add_cog(ModeracaoCog(bot))
     logging.info("Cog ModeracaoCog carregado com sucesso.")
+# --- Fim: Função setup ---
+
+# --- Fim do Arquivo: cogs/moderacao.py ---
