@@ -200,10 +200,13 @@ class VerificacaoCog(commands.Cog):
         try:
             embed = discord.Embed(
                 title="🚀 Bem-vindo ao nosso servidor!",
-                description="Para nossa segurança 🔒, clique no botão abaixo se você for um novo visitante para se verificar.✅",
+                # --- LINHA MODIFICADA ---
+                description="Para nossa segurança 🔒, mostre que você não é um robô assim como eu 🤭! Clique no botão abaixo para se verificar.✅",
+                # --- FIM DA MODIFICAÇÃO ---
                 color=discord.Color.blue()
             )
             embed.set_footer(
+                # Você pode querer ajustar ou remover este footer se a mensagem agora é mais genérica
                 text="Apenas para usuários com o cargo 'Visitante'.")
 
             await interaction.response.send_message(embed=embed, view=VerificarView())
