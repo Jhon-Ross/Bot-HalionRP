@@ -2,13 +2,13 @@ import discord
 import asyncio
 import logging
 import re
-import os  # <<< Adicionar import OS
+import os
 from discord.ui import View, Button, button
 from datetime import datetime, timedelta, timezone
 
+# Try-except para importações (sem alterações)
 try:
     import sys
-    # Ajuste este path se necessário conforme sua estrutura de projeto
     sys.path.append(os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..')))
     from handlers.questionnaire import start_questionnaire, cooldowns, COOLDOWN_MINUTES
@@ -26,6 +26,8 @@ except ImportError as e:
 
 logger = logging.getLogger(__name__)
 
+# Função sanitize_channel_name (sem alterações)
+
 
 def sanitize_channel_name(name: str) -> str:
     name = name.lower()
@@ -40,6 +42,7 @@ def sanitize_channel_name(name: str) -> str:
 
 class WhitelistView(View):
     def __init__(self):
+        # timeout=None é essencial para persistência!
         super().__init__(timeout=None)
 
     @button(label="Quero fazer whitelist", style=discord.ButtonStyle.success, custom_id="start_whitelist")
@@ -49,17 +52,19 @@ class WhitelistView(View):
         now = datetime.now(timezone.utc)
 
         # ----- ETAPA 1: Deferir -----
+        # Deferir cedo para evitar "Interaction Failed"
         await interaction.response.defer(ephemeral=True, thinking=True)
 
         # ----- ETAPA 2: Verificar Cooldown -----
         if member.id in cooldowns and cooldowns[member.id] > now:
-            # ... (código de tratamento de cooldown - sem alterações) ...
             remaining_delta = cooldowns[member.id] - now
             remaining_seconds = remaining_delta.total_seconds()
+            # Arredonda para cima os minutos restantes
             remaining_minutes = int(
                 remaining_seconds // 60) + (1 if remaining_seconds % 60 > 0 else 0)
             logger.info(
                 f"Usuário {member} (ID: {member.id}) tentou whitelist mas está em cooldown por ~{remaining_minutes} min.")
+            # Envia a mensagem de cooldown usando followup, pois já deferimos
             await interaction.followup.send(
                 f"❌ Você ainda está em cooldown! Por favor, aguarde mais **{remaining_minutes} minuto(s)** para tentar novamente.",
                 ephemeral=True
@@ -67,32 +72,53 @@ class WhitelistView(View):
             return
 
         whitelist_channel = None
-        analise_role = None  # Variável para guardar o objeto Role
+        analise_role = None
 
         try:
-            # ----- ETAPA 3: Verificar Canal Existente -----
-            internal_check_name = f"wl-{member.id}"
-            existing_channel = discord.utils.get(
-                guild.text_channels, name=internal_check_name)
+            # ----- ETAPA 3: Verificar Canal Existente (MODIFICADO) -----
+            logger.debug(
+                f"Iniciando verificação de canal existente para {member} (ID: {member.id})")
+            # String exata que procuramos no tópico
+            check_id_string = f"CheckID: wl-{member.id}"
+            existing_channel = None
 
+            # Otimização: Procurar apenas na categoria "WHITELIST" se ela existir
+            target_category = discord.utils.get(
+                guild.categories, name="WHITELIST")
+            search_scope = target_category.text_channels if target_category else guild.text_channels
+            logger.debug(
+                f"Escopo da busca: {'Categoria WHITELIST' if target_category else 'Todos os canais de texto'}")
+
+            for channel in search_scope:
+                # Verifica se o canal tem tópico e se o tópico contém nossa string de ID
+                if channel.topic and check_id_string in channel.topic:
+                    existing_channel = channel
+                    logger.info(
+                        f"Canal existente encontrado para {member.id} pelo tópico: {channel.name} (ID: {channel.id})")
+                    break  # Encontrou, não precisa continuar procurando
+
+            # Se encontrou um canal existente pelo tópico...
             if existing_channel:
-                # ... (código de tratamento de canal existente - sem alterações) ...
+                logger.warning(
+                    f"Tentativa de iniciar whitelist por {member} (ID: {member.id}), mas canal '{existing_channel.name}' (ID: {existing_channel.id}) já existe (verificado via tópico).")
+                # Envia a mensagem amigável informando o usuário
                 await interaction.followup.send(
-                    f"❗ Você já tem um canal de whitelist aberto: {existing_channel.mention}. Conclua ou peça ajuda à staff.",
+                    f"❗ Ops! Parece que você já tem um processo de whitelist em andamento no canal {existing_channel.mention}. "
+                    "Por favor, conclua o processo lá ou, se precisar de ajuda, mencione a staff no canal.",
                     ephemeral=True
                 )
-                logger.warning(
-                    f"Tentativa de iniciar whitelist por {member} (ID: {member.id}), mas canal {existing_channel.name} (verificado por ID) já existe.")
-                return
+                return  # Interrompe a execução aqui
 
-            # ----- ETAPA 4: ATRIBUIR CARGO DE ANÁLISE -----
+            logger.debug(
+                f"Nenhum canal existente encontrado para {member.id} via tópico.")
+
+            # ----- ETAPA 4: ATRIBUIR CARGO DE ANÁLISE (Sem alterações lógicas) -----
             analise_role_id_str = os.getenv("ANALISE_ID")
             if not analise_role_id_str:
                 logger.critical(
-                    "Variável de ambiente ANALISE_ID não definida no .env! Não é possível atribuir o cargo.")
-                # Informar o usuário sobre o erro de configuração é importante
+                    "Variável de ambiente ANALISE_ID não definida!")
                 await interaction.followup.send("❌ Erro de configuração do bot: Cargo 'Análise' não definido. Avise a staff.", ephemeral=True)
-                return  # Interrompe se o ID não estiver configurado
+                return
 
             try:
                 analise_role_id = int(analise_role_id_str)
@@ -100,12 +126,11 @@ class WhitelistView(View):
 
                 if not analise_role:
                     logger.error(
-                        f"O cargo 'Análise' com ID {analise_role_id} não foi encontrado no servidor {guild.name}.")
-                    await interaction.followup.send(f"❌ Erro de configuração do bot: O cargo 'Análise' (ID: {analise_role_id}) não existe neste servidor. Avise a staff.", ephemeral=True)
-                    return  # Interrompe se o cargo não existe
+                        f"Cargo 'Análise' com ID {analise_role_id} não encontrado.")
+                    await interaction.followup.send(f"❌ Erro de configuração: Cargo 'Análise' (ID: {analise_role_id}) não existe. Avise a staff.", ephemeral=True)
+                    return
 
-                # Tenta adicionar o cargo
-                if analise_role not in member.roles:  # Evita tentar adicionar se já tiver
+                if analise_role not in member.roles:
                     logger.info(
                         f"Atribuindo cargo '{analise_role.name}' para {member} (ID: {member.id}).")
                     await member.add_roles(analise_role, reason="Iniciou processo de Whitelist")
@@ -116,70 +141,83 @@ class WhitelistView(View):
                         f"Membro {member} já possui o cargo '{analise_role.name}'.")
 
             except ValueError:
-                logger.error(
-                    f"O valor de ANALISE_ID ('{analise_role_id_str}') no .env não é um número de ID válido.")
-                await interaction.followup.send("❌ Erro de configuração do bot: ID do cargo 'Análise' inválido. Avise a staff.", ephemeral=True)
-                return  # Interrompe se o ID for inválido
+                logger.error(f"ANALISE_ID ('{analise_role_id_str}') inválido.")
+                await interaction.followup.send("❌ Erro de configuração: ID do cargo 'Análise' inválido. Avise a staff.", ephemeral=True)
+                return
             except discord.Forbidden:
                 logger.error(
-                    f"Sem permissão para adicionar o cargo '{analise_role.name if analise_role else analise_role_id}' para {member}. Verifique as permissões de 'Manage Roles'.")
-                # Decide se continua mesmo sem conseguir dar o cargo, ou para. Vamos continuar, mas avisar.
-                await interaction.followup.send("⚠️ Não foi possível atribuir o cargo 'Análise' (verifique permissões do bot), mas o processo de whitelist continuará.", ephemeral=True)
-                # Não retorna aqui, permite continuar sem o cargo. Se preferir parar, adicione 'return'
+                    f"Sem permissão para adicionar cargo '{analise_role.name if analise_role else analise_role_id}' para {member}.")
+                await interaction.followup.send("⚠️ Não foi possível atribuir o cargo 'Análise' (verifique permissões do bot), mas o processo continuará.", ephemeral=True)
             except Exception as e_role:
                 logger.error(
-                    f"Erro inesperado ao tentar atribuir cargo 'Análise' para {member}: {e_role}", exc_info=True)
-                await interaction.followup.send("⚠️ Ocorreu um erro ao tentar atribuir o cargo 'Análise', mas o processo de whitelist continuará.", ephemeral=True)
-                # Não retorna aqui, permite continuar.
+                    f"Erro inesperado ao atribuir cargo 'Análise' para {member}: {e_role}", exc_info=True)
+                await interaction.followup.send("⚠️ Erro ao atribuir cargo 'Análise', mas o processo continuará.", ephemeral=True)
 
-            # ----- ETAPA 5: Preparar e Criar o Canal -----
+            # ----- ETAPA 5: Preparar e Criar o Canal (Adicionado 'topic' explicitamente) -----
             sanitized_username = sanitize_channel_name(member.display_name)
-            last_4_id = str(member.id)[-4:]
-            display_channel_name = f"wl-{sanitized_username[:80]}-{last_4_id}"
+            # Limita o nome para evitar erros de comprimento do Discord
+            max_name_len = 100
+            base_name = f"wl-{sanitized_username}"
+            # Pega os últimos 4 digitos do ID para desambiguação
+            suffix = f"-{str(member.id)[-4:]}"
+            available_len = max_name_len - len(suffix)
+            display_channel_name = f"{base_name[:available_len]}{suffix}"
 
             logger.info(
-                f"Tentando criar canal '{display_channel_name}' para {member} (ID: {member.id})...")
+                f"Preparando para criar canal '{display_channel_name}' para {member} (ID: {member.id}).")
 
             overwrites = {
                 guild.default_role: discord.PermissionOverwrite(read_messages=False),
-                member: discord.PermissionOverwrite(read_messages=True, send_messages=True),
+                # Permissões básicas
+                member: discord.PermissionOverwrite(read_messages=True, send_messages=True, attach_files=True, embed_links=True),
                 guild.me: discord.PermissionOverwrite(
-                    read_messages=True, send_messages=True, manage_messages=True, embed_links=True)
+                    # Permissões para o bot
+                    read_messages=True, send_messages=True, manage_channels=True, manage_messages=True, embed_links=True)
             }
-            category = discord.utils.get(
-                guild.categories, name="WHITELIST")  # Opcional
+
+            # Usa a categoria encontrada anteriormente ou None se não existir
+            category_to_use = target_category  # Reutiliza a variável
+
+            # **IMPORTANTE: Definir o TÓPICO na criação**
+            # Inclui o CheckID
+            channel_topic = f"Whitelist para {member.display_name} ({member.id}) | {check_id_string}"
 
             whitelist_channel = await guild.create_text_channel(
                 name=display_channel_name,
                 overwrites=overwrites,
-                category=category,  # Remova se não usar
-                topic=f"WL para {member.display_name} ({member.id}) | CheckID: {internal_check_name}"
+                category=category_to_use,  # Usa a categoria encontrada
+                topic=channel_topic  # Define o tópico aqui!
             )
             logger.info(
-                f"Canal '{whitelist_channel.name}' criado com sucesso para {member}.")
+                f"Canal '{whitelist_channel.name}' criado com sucesso para {member} com tópico definido.")
 
             # ----- ETAPA 6: Informar Usuário e Iniciar Questionário -----
-            # Envia a confirmação APÓS todo o setup (cargo + canal)
-            await interaction.followup.send(
-                f"✅ Seu canal de whitelist foi criado: {whitelist_channel.mention}"
-                # Mensagem dinâmica
-                f"{' e o cargo de Análise foi atribuído!' if analise_role and analise_role in member.roles else '.'}",
-                ephemeral=True
-            )
+            confirmation_message = f"✅ Seu canal de whitelist foi criado: {whitelist_channel.mention}"
+            if analise_role and analise_role in member.roles:  # Verifica se o cargo foi realmente adicionado
+                confirmation_message += " e o cargo de Análise foi atribuído!"
+            else:
+                confirmation_message += "."
 
+            await interaction.followup.send(confirmation_message, ephemeral=True)
+
+            # Inicia o questionário no novo canal
             await start_questionnaire(member, whitelist_channel, interaction.client)
 
+        # ----- Blocos Except (sem alterações lógicas significativas, apenas garantia de followup) -----
         except discord.Forbidden as e:
-            # Este Forbidden é provavelmente da criação do CANAL
+            # Forbidden pode ser da criação do canal ou da remoção do cargo
+            error_context = "criar canal" if not whitelist_channel else "remover cargo após falha"
             logger.error(
-                f"Erro de PERMISSÃO ao tentar criar canal '{display_channel_name}' para {member}. Detalhes: {e}", exc_info=True)
+                f"Erro de PERMISSÃO ao tentar {error_context} para {member}. Detalhes: {e}", exc_info=True)
             try:
-                await interaction.followup.send("❌ **Erro Crítico:** Permissão negada ao criar canal. Contate um admin.", ephemeral=True)
+                # Usa followup pois a interação original já foi respondida com defer
+                await interaction.followup.send(f"❌ **Erro Crítico:** Permissão negada ao {error_context}. Contate um admin.", ephemeral=True)
             except discord.NotFound:
                 logger.warning(
-                    f"Followup erro (Forbidden Canal) falhou para {member}.")
-            # Tenta remover o cargo se ele foi dado e a criação do canal falhou
-            if analise_role and analise_role in member.roles:
+                    f"Followup de erro (Forbidden {error_context}) falhou para {member}.")
+
+            # Tentar remover o cargo se foi dado e a criação falhou
+            if not whitelist_channel and analise_role and analise_role in member.roles:
                 try:
                     await member.remove_roles(analise_role, reason="Falha na criação do canal de Whitelist")
                     logger.info(
@@ -188,33 +226,34 @@ class WhitelistView(View):
                     logger.error(
                         f"Não foi possível remover cargo de {member} após falha na criação do canal: {e_rem}")
 
-        except ImportError:
+        except ImportError:  # Erro na importação do questionário
             logger.critical(
                 "Erro fatal: Falha na importação de 'handlers.questionnaire'.")
             try:
-                await interaction.followup.send("❌ **Erro Interno do Bot:** Falha ao iniciar whitelist. Avise a staff.", ephemeral=True)
+                await interaction.followup.send("❌ **Erro Interno do Bot:** Falha ao iniciar whitelist (módulo ausente). Avise a staff.", ephemeral=True)
             except discord.NotFound:
                 logger.warning(
-                    f"Followup erro (ImportError) falhou para {member}.")
+                    f"Followup de erro (ImportError) falhou para {member}.")
 
-        except Exception as e:
+        except Exception as e:  # Captura geral para outros erros
             logger.error(
                 f"Erro inesperado durante setup da whitelist para {member}: {e}", exc_info=True)
             try:
-                await interaction.followup.send("❌ Erro inesperado no setup. Tente mais tarde ou contate a staff.", ephemeral=True)
+                await interaction.followup.send("❌ Erro inesperado durante o processo. Tente novamente mais tarde ou contate a staff.", ephemeral=True)
             except discord.NotFound:
                 logger.warning(
-                    f"Followup erro (Geral Setup) falhou para {member}.")
-            # Tenta limpar canal se criado
-            if whitelist_channel:
+                    f"Followup de erro (Geral Setup) falhou para {member}.")
+
+            # Limpeza em caso de erro após criação parcial
+            if whitelist_channel:  # Se o canal chegou a ser criado
                 try:
-                    await whitelist_channel.delete(reason="Falha inesperada no setup")
+                    await whitelist_channel.delete(reason="Falha inesperada no setup da whitelist")
                     logger.info(
-                        f"Canal {whitelist_channel.name} deletado - erro setup.")
+                        f"Canal {whitelist_channel.name} deletado devido a erro no setup.")
                 except Exception as e_del:
                     logger.error(
-                        f"Não deletou canal {whitelist_channel.name} após erro setup: {e_del}")
-            # Tenta remover o cargo se foi dado e algo deu errado depois
+                        f"Não foi possível deletar o canal {whitelist_channel.name} após erro no setup: {e_del}")
+            # Tenta remover o cargo se foi dado e algo deu errado
             if analise_role and analise_role in member.roles:
                 try:
                     await member.remove_roles(analise_role, reason="Falha no setup da Whitelist")

@@ -1,5 +1,7 @@
 import discord
 from discord.ext import commands
+# <--- CERTIFIQUE-SE DE IMPORTAR A VIEW AQUI
+from views.whitelist_view import WhitelistView
 import os
 from dotenv import load_dotenv
 import asyncio
@@ -8,7 +10,8 @@ from datetime import datetime, timezone
 import traceback
 import sys
 import random
-import ctypes  # Apenas para Windows
+import ctypes
+import aiohttp
 
 if sys.platform == 'win32':
     kernel32 = ctypes.windll.kernel32
@@ -40,6 +43,16 @@ class CustomBot(commands.Bot):
         pass
 
     async def setup_hook(self):
+        # --- REGISTRO DE VIEWS PERSISTENTES ---
+        if not self.persistent_views_added:
+            # Adicione instâncias de TODAS as suas views persistentes aqui
+            self.add_view(WhitelistView())  # <--- ESSA LINHA É CRUCIAL!
+            # self.add_view(OutraView())     # <--- Você provavelmente já tem linhas para as outras views
+            # self.add_view(MaisUmaView())
+
+            logging.info("Views persistentes registradas.")  # Use seu logger
+            self.persistent_views_added = True
+        # ------------------------------------
         await self.load_extensions()
 
     async def load_extensions(self):
@@ -338,7 +351,7 @@ async def on_member_remove(member: discord.Member):
 async def main():
     async with bot:
         try:
-            log_header("INICIANDO BOT GENESIS RP", "⚡")
+            log_header("INICIANDO BOT HALION RP", "⚡")
             if not TOKEN:
                 log_status(
                     "DISCORD_TOKEN não encontrado no .env! Encerrando.", "error")
@@ -373,7 +386,7 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
         log_status("Desligamento solicitado pelo usuário (Ctrl+C).", "warning")
-    except aiohttp.ClientConnectorError as e:  # Import aiohttp se usar isso
+    except aiohttp.ClientConnectorError as e:
         log_status(
             "❌ Falha ao conectar-se ao Discord. Verifique sua conexão com a internet, DNS ou firewall.", "error")
         logging.error(f"Detalhes técnicos: {type(e).__name__}: {e}")
