@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 # <--- CERTIFIQUE-SE DE IMPORTAR A VIEW AQUI
 from views.whitelist_view import WhitelistView
+from cogs.ticket_system import CreateTicketView, TicketControlView
 import os
 from dotenv import load_dotenv
 import asyncio
@@ -12,6 +13,7 @@ import sys
 import random
 import ctypes
 import aiohttp
+import logging
 
 if sys.platform == 'win32':
     kernel32 = ctypes.windll.kernel32
@@ -25,6 +27,12 @@ except (TypeError, ValueError):
     logging.critical(
         "DISCORD_GUILD_ID não definido ou inválido no .env! Encerrando.")
     sys.exit("Erro: DISCORD_GUILD_ID ausente ou inválido.")
+
+print("--- DEBUG: ticket_system.py - NO TOPO DO ARQUIVO ---")
+# ESSENCIAL
+print(f"DEBUG cog: TICKET_CATEGORY_ID = {os.getenv('TICKET_CATEGORY_ID')}")
+# ESSENCIAL
+print(f"DEBUG cog: ALLOWED_MOD_ROLE_IDS = {os.getenv('ALLOWED_MOD_ROLE_IDS')}")
 
 
 class CustomBot(commands.Bot):
@@ -46,11 +54,13 @@ class CustomBot(commands.Bot):
         # --- REGISTRO DE VIEWS PERSISTENTES ---
         if not self.persistent_views_added:
             # Adicione instâncias de TODAS as suas views persistentes aqui
-            self.add_view(WhitelistView())  # <--- ESSA LINHA É CRUCIAL!
-            # self.add_view(OutraView())     # <--- Você provavelmente já tem linhas para as outras views
-            # self.add_view(MaisUmaView())
+            self.add_view(WhitelistView())  # Mantenha esta se for de outro cog
+            # self.add_view(CreateTicketView())  # <--- REMOVA ESTA LINHA
+            # self.add_view(TicketControlView()) # <--- REMOVA ESTA LINHA
 
-            logging.info("Views persistentes registradas.")  # Use seu logger
+            # Log será feito pelo Cog do ticket agora
+            # logging.info("Views persistentes registradas.")
+            # Pode manter ou remover se não houver outras views
             self.persistent_views_added = True
         # ------------------------------------
         await self.load_extensions()
