@@ -41,7 +41,7 @@ class TicketControlView(discord.ui.View):
             return
 
         if not has_allowed_role(user, self.cog.allowed_mod_role_ids):
-            await interaction.response.send_message("Apenas membros da equipe designada podem fechar este ticket.", ephemeral=True)
+            await interaction.response.send_message("Apenas membros da equipe staff podem fechar este ticket.", ephemeral=True)
             return
 
         if not self.cog.ticket_category_id or not self.cog.allowed_mod_role_ids:
@@ -340,7 +340,7 @@ class CreateTicketView(discord.ui.View):
             # Passa o cog para a view de controle
             control_view = TicketControlView(self.cog)
             await channel.send(
-                content=f"{user.mention}, seu ticket foi criado! {mentions_str}",
+                content=f"{user.mention}, seu ticket foi criado!",
                 embed=embed_ticket, view=control_view
             )
             await interaction.followup.send(f"✅ Ticket criado em {channel.mention}!", ephemeral=True)
