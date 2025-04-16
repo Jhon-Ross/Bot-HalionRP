@@ -1,5 +1,7 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
+from discord import Activity, ActivityType
+import itertools
 # <--- CERTIFIQUE-SE DE IMPORTAR A VIEW AQUI
 from views.whitelist_view import WhitelistView
 from cogs.ticket_system import CreateTicketView, TicketControlView
@@ -27,12 +29,6 @@ except (TypeError, ValueError):
     logging.critical(
         "DISCORD_GUILD_ID não definido ou inválido no .env! Encerrando.")
     sys.exit("Erro: DISCORD_GUILD_ID ausente ou inválido.")
-
-print("--- DEBUG: ticket_system.py - NO TOPO DO ARQUIVO ---")
-# ESSENCIAL
-print(f"DEBUG cog: TICKET_CATEGORY_ID = {os.getenv('TICKET_CATEGORY_ID')}")
-# ESSENCIAL
-print(f"DEBUG cog: ALLOWED_MOD_ROLE_IDS = {os.getenv('ALLOWED_MOD_ROLE_IDS')}")
 
 
 class CustomBot(commands.Bot):
@@ -230,6 +226,9 @@ async def on_ready():
             logging.error(f"Erro sync: {traceback.format_exc()}")
 
         log_header("BOT PRONTO PARA USO", "🚀")
+                # Inicia o loop de troca de status
+        if not troca_status.is_running():
+            troca_status.start()
 
     except Exception as e:
         log_status(
@@ -348,6 +347,18 @@ async def on_member_join(member: discord.Member):
     else:
         log_status(
             "VISITANTE_ID não definido no .env, cargo não atribuído.", "warning")
+
+# Ciclo de status do bot
+status_list = itertools.cycle([
+    discord.CustomActivity(name="🏗️ Observando a cidade ser construída"),
+    discord.CustomActivity(name="🌆 A cidade está ficando mais linda a cada dia"),
+    discord.CustomActivity(name="⚙️ Trabalhando para Halion City")
+])
+
+
+@tasks.loop(seconds=10)
+async def troca_status():
+    await bot.change_presence(activity=next(status_list))
 
 
 @bot.event
