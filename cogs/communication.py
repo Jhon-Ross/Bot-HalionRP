@@ -10,6 +10,7 @@ from typing import List, Set
 # --- Início: Variáveis Globais e Carregamento de Configurações ---
 MESSAGE_ID_FILE = "data/comunicados_message_id.txt"
 COMUNICADOS_CHANNEL_ID = None
+AVISOS_CHANNEL_ID = None  # Novo canal de avisos
 ALLOWED_ROLE_IDS: Set[int] = set()
 
 try:
@@ -22,6 +23,17 @@ try:
 except (TypeError, ValueError):
     logging.error("COMUNICADOS_ID inválido no .env! Deve ser um número.")
     COMUNICADOS_CHANNEL_ID = None
+
+# Novo: carregar o ID do canal AVISOS
+try:
+    _avisos_id_str = os.getenv("AVISOS_ID")
+    if _avisos_id_str:
+        AVISOS_CHANNEL_ID = int(_avisos_id_str)
+    else:
+        logging.warning("AVISOS_ID não definido no .env! O comando /comunicados não funcionará no canal de avisos.")
+except (TypeError, ValueError):
+    logging.error("AVISOS_ID inválido no .env! Deve ser um número.")
+    AVISOS_CHANNEL_ID = None
 
 _allowed_roles_str = os.getenv("ALLOWED_MOD_ROLE_IDS", "")
 if _allowed_roles_str:
@@ -162,19 +174,32 @@ class CommunicationCog(commands.Cog):
         """Comando para definir ou atualizar a mensagem de comunicado."""
         await interaction.response.defer(ephemeral=True, thinking=True)
 
-        if not COMUNICADOS_CHANNEL_ID:
-            await interaction.followup.send("❌ O ID do canal de comunicados não está configurado no bot.", ephemeral=True)
+        # Permitir uso apenas nos canais COMUNICADOS ou AVISOS
+        canais_permitidos = set()
+        if COMUNICADOS_CHANNEL_ID:
+            canais_permitidos.add(COMUNICADOS_CHANNEL_ID)
+        if AVISOS_CHANNEL_ID:
+            canais_permitidos.add(AVISOS_CHANNEL_ID)
+
+        if not canais_permitidos:
+            await interaction.followup.send("❌ Nenhum canal permitido está configurado no bot.", ephemeral=True)
             return
 
-        if interaction.channel_id != COMUNICADOS_CHANNEL_ID:
-            target_channel_mention = f"<#{COMUNICADOS_CHANNEL_ID}>" if self.bot.get_channel(
-                COMUNICADOS_CHANNEL_ID) else f"ID: {COMUNICADOS_CHANNEL_ID}"
-            await interaction.followup.send(f"⚠️ Este comando só pode ser usado no canal de comunicados ({target_channel_mention}).", ephemeral=True)
+        if interaction.channel_id not in canais_permitidos:
+            canais_mencoes = [f"<#{cid}>" for cid in canais_permitidos]
+            await interaction.followup.send(f"⚠️ Este comando só pode ser usado nos canais permitidos: {', '.join(canais_mencoes)}.", ephemeral=True)
             return
 
-        target_channel = await self._get_comunicados_channel()
+        # Determinar o canal alvo
+        if interaction.channel_id == COMUNICADOS_CHANNEL_ID:
+            target_channel = await self._get_comunicados_channel()
+        elif interaction.channel_id == AVISOS_CHANNEL_ID:
+            target_channel = interaction.channel  # Já está no canal correto
+        else:
+            target_channel = None
+
         if not target_channel:
-            await interaction.followup.send("❌ Não foi possível encontrar ou acessar o canal de comunicados configurado.", ephemeral=True)
+            await interaction.followup.send("❌ Não foi possível encontrar ou acessar o canal configurado.", ephemeral=True)
             return
 
         embed = discord.Embed(
@@ -186,53 +211,72 @@ class CommunicationCog(commands.Cog):
         embed.set_footer(
             text=f"Atualizado por: {interaction.user.display_name}")
 
-        message_to_edit = None
-        if self.message_id:
+        # Se for no canal de comunicados, tenta editar a mensagem antiga
+        if interaction.channel_id == COMUNICADOS_CHANNEL_ID:
+            message_to_edit = None
+            if self.message_id:
+                try:
+                    message_to_edit = await target_channel.fetch_message(self.message_id)
+                    self.logger.info(
+                        f"Mensagem de comunicado {self.message_id} encontrada para edição.")
+                except discord.NotFound:
+                    self.logger.warning(
+                        f"Mensagem de comunicado {self.message_id} não encontrada. Enviando nova.")
+                    self._save_message_id(None)
+                    self.message_id = None
+                except discord.Forbidden:
+                    self.logger.error(
+                        f"Sem permissão para buscar a mensagem {self.message_id} no canal {target_channel.name}.")
+                    await interaction.followup.send("❌ O bot não tem permissão para ler o histórico de mensagens no canal.", ephemeral=True)
+                    return
+                except Exception as e:
+                    self.logger.error(
+                        f"Erro inesperado ao buscar mensagem {self.message_id}: {e}\n{traceback.format_exc()}")
+                    await interaction.followup.send("❌ Ocorreu um erro ao tentar buscar a mensagem anterior.", ephemeral=True)
+                    return
+
             try:
-                message_to_edit = await target_channel.fetch_message(self.message_id)
-                self.logger.info(
-                    f"Mensagem de comunicado {self.message_id} encontrada para edição.")
-            except discord.NotFound:
-                self.logger.warning(
-                    f"Mensagem de comunicado {self.message_id} não encontrada. Enviando nova.")
-                self._save_message_id(None)
-                self.message_id = None
+                if message_to_edit:
+                    await message_to_edit.edit(embed=embed)
+                    self.logger.info(
+                        f"Mensagem de comunicado {self.message_id} atualizada por {interaction.user}.")
+                    await interaction.followup.send("✅ Comunicado atualizado com sucesso!", ephemeral=True)
+                else:
+                    new_message = await target_channel.send(embed=embed)
+                    self._save_message_id(new_message.id)
+                    self.logger.info(
+                        f"Nova mensagem de comunicado {self.message_id} enviada por {interaction.user}.")
+                    await interaction.followup.send("✅ Comunicado enviado com sucesso!", ephemeral=True)
+
             except discord.Forbidden:
                 self.logger.error(
-                    f"Sem permissão para buscar a mensagem {self.message_id} no canal {target_channel.name}.")
-                await interaction.followup.send("❌ O bot não tem permissão para ler o histórico de mensagens no canal.", ephemeral=True)
-                return
+                    f"Sem permissão para enviar/editar mensagens no canal {target_channel.name}.")
+                await interaction.followup.send(f"❌ O bot não tem permissão para {'editar' if message_to_edit else 'enviar'} mensagens no canal {target_channel.mention}.", ephemeral=True)
+            except discord.HTTPException as e:
+                self.logger.error(
+                    f"Erro HTTP ao enviar/editar comunicado: {e}\n{traceback.format_exc()}")
+                await interaction.followup.send("❌ Ocorreu um erro de comunicação com o Discord.", ephemeral=True)
             except Exception as e:
                 self.logger.error(
-                    f"Erro inesperado ao buscar mensagem {self.message_id}: {e}\n{traceback.format_exc()}")
-                await interaction.followup.send("❌ Ocorreu um erro ao tentar buscar a mensagem anterior.", ephemeral=True)
-                return
-
-        try:
-            if message_to_edit:
-                await message_to_edit.edit(embed=embed)
-                self.logger.info(
-                    f"Mensagem de comunicado {self.message_id} atualizada por {interaction.user}.")
-                await interaction.followup.send("✅ Comunicado atualizado com sucesso!", ephemeral=True)
-            else:
-                new_message = await target_channel.send(embed=embed)
-                self._save_message_id(new_message.id)
-                self.logger.info(
-                    f"Nova mensagem de comunicado {self.message_id} enviada por {interaction.user}.")
-                await interaction.followup.send("✅ Comunicado enviado com sucesso!", ephemeral=True)
-
-        except discord.Forbidden:
-            self.logger.error(
-                f"Sem permissão para enviar/editar mensagens no canal {target_channel.name}.")
-            await interaction.followup.send(f"❌ O bot não tem permissão para {'editar' if message_to_edit else 'enviar'} mensagens no canal {target_channel.mention}.", ephemeral=True)
-        except discord.HTTPException as e:
-            self.logger.error(
-                f"Erro HTTP ao enviar/editar comunicado: {e}\n{traceback.format_exc()}")
-            await interaction.followup.send("❌ Ocorreu um erro de comunicação com o Discord.", ephemeral=True)
-        except Exception as e:
-            self.logger.error(
-                f"Erro inesperado ao enviar/editar comunicado: {e}\n{traceback.format_exc()}")
-            await interaction.followup.send("❌ Ocorreu um erro inesperado.", ephemeral=True)
+                    f"Erro inesperado ao enviar/editar comunicado: {e}\n{traceback.format_exc()}")
+                await interaction.followup.send("❌ Ocorreu um erro inesperado.", ephemeral=True)
+        # Se for no canal AVISOS, apenas envia a embed
+        elif interaction.channel_id == AVISOS_CHANNEL_ID:
+            try:
+                await target_channel.send(embed=embed)
+                await interaction.followup.send("✅ Comunicado enviado com sucesso no canal de avisos!", ephemeral=True)
+            except discord.Forbidden:
+                self.logger.error(
+                    f"Sem permissão para enviar mensagens no canal {target_channel.name}.")
+                await interaction.followup.send(f"❌ O bot não tem permissão para enviar mensagens no canal {target_channel.mention}.", ephemeral=True)
+            except discord.HTTPException as e:
+                self.logger.error(
+                    f"Erro HTTP ao enviar comunicado: {e}\n{traceback.format_exc()}")
+                await interaction.followup.send("❌ Ocorreu um erro de comunicação com o Discord.", ephemeral=True)
+            except Exception as e:
+                self.logger.error(
+                    f"Erro inesperado ao enviar comunicado: {e}\n{traceback.format_exc()}")
+                await interaction.followup.send("❌ Ocorreu um erro inesperado.", ephemeral=True)
     # --- Fim: Comando de Aplicação /comunicados ---
 
     # --- Início: Tratador de Erros para /comunicados (on_comunicado_error) ---
